@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Medikit CZ 2026 - Tiskove zpravy a PR publikace</title>
+  <style>
+    :root {
+      --bg: #f5f3ee;
+      --paper: #fffdf8;
+      --ink: #1f2328;
+      --muted: #5f6b76;
+      --line: #d8d1c5;
+      --accent: #8b3d2e;
+      --accent-soft: #f4e3da;
+      --ok: #22543d;
+      --warn: #8a5a00;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top right, #eadfcf 0, transparent 28rem),
+        linear-gradient(180deg, #faf7f1 0%, var(--bg) 100%);
+    }
+    .wrap {
+      max-width: 1600px;
+      margin: 0 auto;
+      padding: 32px 24px 56px;
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: 34px;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+    }
+    .sub {
+      margin: 0 0 22px;
+      color: var(--muted);
+      font-size: 17px;
+    }
+    .note {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-left: 5px solid var(--accent);
+      border-radius: 14px;
+      padding: 16px 18px;
+      margin-bottom: 22px;
+      box-shadow: 0 10px 30px rgba(54, 40, 20, 0.05);
+    }
+    .note p {
+      margin: 0 0 8px;
+      line-height: 1.45;
+    }
+    .note p:last-child { margin-bottom: 0; }
+    .table-wrap {
+      overflow: auto;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      box-shadow: 0 14px 34px rgba(54, 40, 20, 0.08);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 1500px;
+    }
+    thead th {
+      position: sticky;
+      top: 0;
+      z-index: 1;
+      background: linear-gradient(180deg, #2a2d2f 0%, #36393c 100%);
+      color: #fff;
+      text-align: left;
+      font-size: 13px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      padding: 14px 12px;
+      border-right: 1px solid rgba(255, 255, 255, 0.1);
+      vertical-align: top;
+    }
+    tbody td {
+      padding: 12px;
+      border-top: 1px solid var(--line);
+      border-right: 1px solid var(--line);
+      vertical-align: top;
+      line-height: 1.45;
+      font-size: 14px;
+    }
+    tbody tr:nth-child(odd) td {
+      background: rgba(255, 255, 255, 0.66);
+    }
+    .publisher {
+      font-weight: 700;
+      color: var(--accent);
+    }
+    .tag {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 12px;
+      margin-top: 4px;
+      white-space: nowrap;
+    }
+    .muted { color: var(--muted); }
+    .ok { color: var(--ok); font-weight: 700; }
+    .warn { color: var(--warn); font-weight: 700; }
+    a { color: #0d4f7a; }
+    ul {
+      margin: 0;
+      padding-left: 18px;
+    }
+    li { margin-bottom: 4px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Medikit CZ 2026: tiskové zprávy, inzerce a PR články</h1>
+    <p class="sub">Praktická rešerše pro Českou republiku. Ověřeno k 26. 3. 2026 na oficiálních webech vydavatelů, mediakitech a cenících.</p>
+
+    <div class="note">
+      <p><strong>Jak tabulku číst:</strong> u redakčního kontaktu jde o cestu pro zaslání tipu nebo tiskové zprávy, ale zveřejnění není nikdy garantované. Garanci dává až placený formát.</p>
+      <p><strong>CPT</strong> = cena za 1000 zobrazení. U části vydavatelů není veřejný pevný ceník pro všechen display; takové položky jsou označené jako <span class="warn">na dotaz</span>.</p>
+      <p><strong>Rozsah:</strong> záměrně jsem upřednostnil tituly, kde je veřejně dohledatelný kontakt a/nebo konkrétní ceník. U velké části českých médií se nativní formáty naceňují individuálně.</p>
+    </div>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Vydavatel</th>
+            <th>Titul</th>
+            <th>Typ</th>
+            <th>Web</th>
+            <th>Kam poslat TZ / redakční vstup</th>
+            <th>Placená spolupráce / obchod</th>
+            <th>Adresa / sídlo</th>
+            <th>Veřejná cena inzerce</th>
+            <th>Veřejná cena PR / native</th>
+            <th>Poznámka</th>
+            <th>Zdroj</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><div class="publisher">Economia</div></td>
+            <td><strong>Hospodářské noviny</strong><br><span class="tag">mainstream / business print</span></td>
+            <td>Deník, print</td>
+            <td><a href="https://hn.cz">hn.cz</a></td>
+            <td>Centrální redakční e-mail není v ceníku veřejně uveden; pro komerční výstupy používej obchodní kontakt.</td>
+            <td><a href="mailto:inzerce@economia.cz">inzerce@economia.cz</a><br>+420 233 073 169</td>
+            <td>Economia, a.s., PORT 7, Pod Dráhou 1637/2, 170 00 Praha 7 - Holešovice</td>
+            <td><span class="ok">1/1 438 900 Kč</span><br>1/2A 251 900 Kč<br>1/4A 146 650 Kč<br>Junior page A 328 900 Kč</td>
+            <td><span class="warn">na dotaz</span><br>Kombinovaná nabídka print + digitál se připravuje individuálně.</td>
+            <td>Uzávěrka 5 pracovních dní před zveřejněním. Sponzorství tématu: 329 000 Kč.</td>
+            <td><a href="https://www.economia.cz/wp-content/uploads/2026/03/Economia_Cenik_PRINT_01-2026_CZ_2.pdf">Print ceník 2026</a><br><a href="https://ad.economia.cz/">ad.economia.cz</a><br><a href="https://www.economia.cz/">Economia</a></td>
+          </tr>
+
+          <tr>
+            <td><div class="publisher">Economia</div></td>
+            <td><strong>HN.cz / HN BeNative</strong><br><span class="tag">mainstream / business online</span></td>
+            <td>Web, native studio</td>
+            <td><a href="https://hn.cz">hn.cz</a></td>
+            <td>Redakční tipy podle rubrik; pro placené výstupy přímo obchod.</td>
+            <td><a href="mailto:inzerce@economia.cz">inzerce@economia.cz</a></td>
+            <td>Economia, a.s., PORT 7, Pod Dráhou 1637/2, 170 00 Praha 7 - Holešovice</td>
+            <td><span class="warn">display ceník veřejně neuveden</span></td>
+            <td><span class="ok">Textový výstup 80 000 Kč</span><br>Print + online 150 000 Kč<br>Text v printu 120 000 Kč<br>Advertorial 100 000 Kč<br>Podcast 90 000 Kč<br>Microsite 350 000 Kč<br>Tematický speciál od 500 000 Kč</td>
+            <td>Silná varianta pro garantované uveřejnění branded obsahu v HN.</td>
+            <td><a href="https://www.economia.cz/wp-content/uploads/2026/02/Economia_Cenik_SPEC-online_01-2026_CZ-1.pdf">Economia online / special ceník 2026</a></td>
+          </tr>
+
+          <tr>
+            <td><div class="publisher">Economia</div></td>
+            <td><strong>Aktuálně.cz</strong><br><span class="tag">mainstream / zpravodajský online</span></td>
+            <td>Web, obsahové projekty</td>
+            <td><a href="https://www.aktualne.cz">aktualne.cz</a></td>
+            <td>Centrální redakční e-mail na ceníku není; pro placenou publikaci obchodní kontakt.</td>
+            <td><a href="mailto:inzerce@economia.cz">inzerce@economia.cz</a></td>
+            <td>Economia, a.s., PORT 7, Pod Dráhou 1637/2, 170 00 Praha 7 - Holešovice</td>
+            <td><span class="warn">na dotaz</span></td>
+            <td><span class="ok">Branded video / podcast / text 150 000 Kč</span><br>Obsahové speciály od 150 000 Kč / rok</td>
+            <td>Vhodné pro tematická partnerství a dlouhodobé branded content projekty.</td>
+            <td><a href="https://www.economia.cz/wp-content/uploads/2026/02/Economia_Cenik_SPEC-online_01-2026_CZ-1.pdf">Economia online / special ceník 2026</a></td>
+          </tr>
+
+          <tr>
+            <td><div class="publisher">Economia</div></td>
+            <td><strong>Ekonom</strong><br><span class="tag">odborné / business print</span></td>
+            <td>Týdeník, print</td>
+            <td><a href="https://www.ekonom.cz">ekonom.cz</a></td>
+            <td>Redakční kontakt centrálně neuveden; pro PR/native využij obchodní kontakt.</td>
+            <td><a href="mailto:inzerce@economia.cz">inzerce@economia.cz</a></td>
+            <td>Economia, a.s., PORT 7, Pod Dráhou 1637/2, 170 00 Praha 7 - Holešovice</td>
+            <td><span class="ok">1/1 240 900 Kč</span><br>2/1 328 900 Kč<br>1/2A 144 837 Kč<br>1/4A 89 536 Kč</td>
+            <td><span class="warn">na dotaz</span> pro čistě redakční PR<br>BeNative online + print: 100 000 Kč</td>
+            <td>Vedle printu má i samostatnou BeNative nabídku pro online / kombinované výstupy.</td>
+            <td><a href="https://www.economia.cz/wp-content/uploads/2026/03/Economia_Cenik_PRINT_01-2026_CZ_2.pdf">Print ceník 2026</a><br><a href="https://www.economia.cz/wp-content/uploads/2026/02/Economia_Cenik_SPEC-online_01-2026_CZ-1.pdf">Special online 2026</a></td>
+          </tr>
+
+          <tr>
+            <td><div class="publisher">Economia</div></td>
+            <td><strong>Ekonom.cz / BeNative</strong><br><span class="tag">odborné / business online</span></td>
+            <td>Web, native studio</td>
+            <td><a href="https://www.ekonom.cz">ekonom.cz</a></td>
+            <td>Redakční / placené formáty řeší obchodní kontakt vydavatelství.</td>
+            <td><a href="mailto:inzerce@economia.cz">inzerce@economia.cz</a></td>
+            <td>Economia, a.s., PORT 7, Pod Dráhou 1637/2, 170 00 Praha 7 - Holešovice</td>
+            <td><span class="warn">display veřejně neuveden</span></td>
+            <td><span class="ok">Text + print 100 000 Kč</span><br>Redakční speciál 250 000 Kč<br>Debata 150 000 Kč<br>Sponzoring podcastu 80 000 Kč<br>Podcast Business 90 000 Kč</td>
+            <td>Dobrá volba pro B2B, management, investice, corporate leadership.</td>
+            <td><a href="https://www.economia.cz/wp-content/uploads/2026/02/Economia_Cenik_SPEC-online_01-2026_CZ-1.pdf">Economia online / special ceník 2026</a></td>
+          </tr>
+
+          <tr>
+            <td><div class="publisher">Economia</div></td>
+            <td><strong>Právní rádce</strong><br><span class="tag">odborné / právo</span></td>
+            <td>Měsíční příloha, print</td>
+            <td><a href="https://www.economia.cz/ceniky-inzerce/">Economia - ceníky</a></td>
+            <td>Redakční kontakt centrálně neuveden; placené výstupy přes Economia.</td>
+            <td><a href="mailto:inzerce@economia.cz">inzerce@economia.cz</a></td>
+            <td>Economia, a.s., PORT 7, Pod Dráhou 1637/2, 170 00 Praha 7 - Holešovice</td>
+            <td><span class="ok">1/1 119 166 Kč</span><br>1/2 62 700 Kč<br>1/3 46 200 Kč<br>1/4 34 050 Kč</td>
+            <td><span class="warn">na dotaz</span></td>
+            <td>Příloha míří na management a právní publikum. Hodí se pro legal, compliance, HR a poradenství.</td>
+            <td><a href="https://www.economia.cz/wp-content/uploads/2026/03/Economia_Cenik_PRINT_01-2026_CZ_2.pdf">Print ceník 2026</a></td>
+          </tr>
+
+          <tr>
+            <td><div class="publisher">Economia</div></td>
+            <td><strong>Logistika</strong><br><span class="tag">odborné / logistika a supply chain</span></td>
+            <td>Oborový časopis + newsletter</td>
+            <td><a href="https://www.economia.cz/ceniky-inzerce/">Economia - ceníky</a></td>
+            <td>Redakční kontakt centrálně neuveden; placené výstupy přes obchod Economia.</td>
+            <td><a href="mailto:inzerce@economia.cz">inzerce@economia.cz</a></td>
+            <td>Economia, a.s., PORT 7, Pod Dráhou 1637/2, 170 00 Praha 7 - Holešovice</td>
+            <td><span class="ok">1/1 155 760 Kč</span><br>1/2A 45 936 Kč<br>1/3A 31 416 Kč<br>1/4A 26 268 Kč<br>2. strana obálky 89 760 Kč</td>
+            <td><span class="warn">na dotaz</span></td>
+            <td>Veřejně je uveden i newsletter Logistika; termíny pro dodání podkladů jsou zvlášť.</td>
+            <td><a href="https://www.economia.cz/wp-content/uploads/2026/03/Economia_Cenik_PRINT_01-2026_CZ_2.pdf">Print ceník 2026</a></td>
+          </tr>
+
+          <tr>
+            <td><div class="publisher">Czech News Center</div></td>
+            <td><strong>Blesk / Blesk.cz</strong><br><span class="tag">mainstream / bulvár + news online</span></td>
+            <td>Web + print brand</td>
+            <td><a href="https://www.blesk.cz">blesk.cz</a></td>
+            <td><a href="mailto:tip@blesk.cz">tip@blesk.cz</a></td>
+            <td><a href="mailto:info@cncenter.cz">info@cncenter.cz</a><br><a href="mailto:podpora@cncenter.cz">podpora@cncenter.cz</a></td>
+            <td>CZECH NEWS CENTER a. s., náměstí Marie Schmolkové 3493/1, 100 00 Praha 10</td>
+            <td><span class="ok">Blesk homepage branding 560-1 010 Kč CPT</span><br>Blesk floating branding 280-510 Kč CPT</td>
+            <td><span class="ok">PR článek 30 000 Kč</span><br>Smarticle 200 Kč CPT<br>Nativní rectangle 180-330 Kč CPT</td>
+            <td>Silný reach. U cílených webů CNC se native/display často prodává podle konkrétního webu nebo packu.</td>
+            <td><a href="https://www.blesk.cz/kontakty">Blesk - kontakty</a><br><a href="https://www.cncenter.cz/">CNC</a><br><a href="https://www.cncenter.cz/inzerce">CNC inzerce</a><br><a href="https://mxfbijamra.eu-central-1.awsapprunner.com/assets/2a23e4a6-54f4-4a54-a7a9-9ac99a37132e.pdf">CNC online ceník 2026</a></td>
+          </tr>
+
+          <tr>
+            <td><div class="publisher">Czech News Center</div></td>
+            <td><strong>Reflex / Reflex.cz</strong><br><span class="tag">mainstream / publicistika</span></td>
+            <td>Týdeník + web</td>
+            <td><a href="https://www.reflex.cz">reflex.cz</a></td>
+            <td><a href="mailto:rxonline@reflex.cz">rxonline@reflex.cz</a><br>+420 253 253 553</td>
+            <td><a href="mailto:info@cncenter.cz">info@cncenter.cz</a></td>
+            <td>CZECH NEWS CENTER a. s., náměstí Marie Schmolkové 3493/1, 100 00 Praha 10</td>
+            <td><span class="ok">Cílený branding dle webu 300-540 Kč CPT</span><br>Nativní PR premium 100-180 Kč CPT</td>
+            <td><span class="ok">PR článek 30 000 Kč</span></td>
+            <td>Reflex je v CNC i v mužském a zpravodajském packu, lze ho koupit samostatně i v kombinacích.</td>
+            <td><a href="https://www.reflex.cz/kontakty">Reflex - kontakty</a><br><a href="https://www.cncenter.cz/inzerce">CNC inzerce</a><br><a href="https://mxfbijamra.eu-central-1.awsapprunner.com/assets/2a23e4a6-54f4-4a54-a7a9-9ac99a37132e.pdf">CNC online ceník 2026</a></td>
+          </tr>
+
+          <tr>
+            <td><div class="publisher">Czech News Center</div></td>
+            <td><strong>e15.cz</strong><br><span class="tag">mainstream / business online</span></td>
+            <td>Web</td>
+            <td><a href="https://www.e15.cz">e15.cz</a></td>
+            <td>Veřejný centrální redakční e-mail se mi nepodařilo na oficiální kontaktní stránce strojově potvrdit; pro jistou placenou publikaci použij obchodní kontakt.</td>
+            <td><a href="mailto:info@cncenter.cz">info@cncenter.cz</a></td>
+            <td>CZECH NEWS CENTER a. s., náměstí Marie Schmolkové 3493/1, 100 00 Praha 10</td>
+            <td><span class="ok">Branding 400-720 Kč CPT</span><br>Billboard bottom 340-620 Kč CPT<br>Nativní rectangle 260-470 Kč CPT</td>
+            <td><span class="ok">PR článek 50 000 Kč</span></td>
+            <td>Prakticky jeden z nejčitelnějších business-news online titulů s veřejným online ceníkem v CNC.</td>
+            <td><a href="https://www.cncenter.cz/inzerce">CNC inzerce</a><br><a href="https://mxfbijamra.eu-central-1.awsapprunner.com/assets/2a23e4a6-54f4-4a54-a7a9-9ac99a37132e.pdf">CNC online ceník 2026</a></td>
+          </tr>
+
+          <tr>
+            <td><div class="publisher">Czech News Center</div></td>
+            <td><strong>iSport.cz</strong><br><span class="tag">mainstream / sport online</span></td>
+            <td>Web</td>
+            <td><a href="https://isport.blesk.cz">isport.blesk.cz</a></td>
+            <td>Veřejný centrální redakční e-mail nebyl v oficiálním ceníku / kontaktech jednoduše potvrzen; pro placenou publikaci použij obchod.</td>
+            <td><a href="mailto:info@cncenter.cz">info@cncenter.cz</a></td>
+            <td>CZECH NEWS CENTER a. s., náměstí Marie Schmolkové 3493/1, 100 00 Praha 10</td>
+            <td><span class="ok">Branding 470-850 Kč CPT</span><br>Billboard bottom 330-600 Kč CPT<br>Nativní rectangle 280-510 Kč CPT</td>
+            <td><span class="ok">PR článek 30 000 Kč</span></td>
+            <td>Dobré pro sport, betting, fan engagement a eventy.</td>
+            <td><a href="https://www.cncenter.cz/inzerce">CNC inzerce</a><br><a href="https://mxfbijamra.eu-central-1.awsapprunner.com/assets/2a23e4a6-54f4-4a54-a7a9-9ac99a37132e.pdf">CNC online ceník 2026</a></td>
+          </tr>
+
+          <tr>
+            <td><div class="publisher">N Media</div></td>
+            <td><strong>Deník N</strong><br><span class="tag">mainstream / prémiový online</span></td>
+            <td>Web, podcasty, newslettery</td>
+            <td><a href="https://www.denikn.cz">denikn.cz</a></td>
+            <td><a href="mailto:info@denikn.cz">info@denikn.cz</a></td>
+            <td><a href="mailto:tamara.lozincakova@denikn.cz">tamara.lozincakova@denikn.cz</a><br><a href="mailto:karolina.planickova@denikn.cz">karolina.planickova@denikn.cz</a><br>+420 777 287 710</td>
+            <td>N Media, a.s., Spálená 29, Praha 1</td>
+            <td><span class="ok">Display bannery cca 24 500-50 000 Kč</span><br>Sponzoring podcastu 44 000 Kč<br>Aplikace Minuta po 99 000-129 000 Kč</td>
+            <td><span class="ok">PR článek 40 000 Kč</span><br>Odemknutí článku od 25 000 Kč</td>
+            <td>Na inzerci mají rovnou veřejný online ceník a kontakty. Cenová hladina je z PDF platného od 1. 1. 2025, které je na stránce stále odkazované k 26. 3. 2026.</td>
+            <td><a href="https://www.denikn.cz/inzerce/">Deník N - inzerce</a><br><a href="https://static.novydenik.com/2024/12/cenik25.pdf">Online ceník</a></td>
+          </tr>
+
+          <tr>
+            <td><div class="publisher">MediaRey</div></td>
+            <td><strong>Forbes.cz</strong><br><span class="tag">business / premium online</span></td>
+            <td>Web, newslettery, branded studio</td>
+            <td><a href="https://www.forbes.cz">forbes.cz</a></td>
+            <td><a href="mailto:redakce@forbes.cz">redakce@forbes.cz</a></td>
+            <td><a href="mailto:obchod@forbes.cz">obchod@forbes.cz</a><br>+420 228 225 093</td>
+            <td>MediaRey, SE (právní subjekt uvedený na stránce inzerce; poštovní adresa na téže stránce není výslovně rozepsaná)</td>
+            <td><span class="ok">Leaderboard 900 Kč CPT</span><br>Branding 900 Kč CPT<br>Skyscraper sticky 750 Kč CPT<br>Native Ad 250 Kč CPT</td>
+            <td><span class="ok">Advoice 90 000 Kč</span><br>Advoice Plus 140 000 Kč<br>Brandvoice 200 000 Kč<br>Brandvoice Podcast 180 000 Kč<br>Speciální projekt od 500 000 Kč</td>
+            <td>Forbes má jeden z nejčitelnějších veřejných webových mediakitů v CZ včetně native / brandvoice cen.</td>
+            <td><a href="https://www.forbes.cz/inzerce/">Forbes - inzerce</a><br><a href="https://cdn.forbes.cz/uploads/2026/03/WEB_kit_2026-CZ-DEF-09032026.pdf">Forbes web kit 2026</a></td>
+          </tr>
+
+          <tr>
+            <td><div class="publisher">ČTK / Protext</div></td>
+            <td><strong>Protext ČTK</strong><br><span class="tag">distribuce tiskových zpráv</span></td>
+            <td>Newswire / distribuce TZ</td>
+            <td><a href="https://www.protext.cz/">protext.cz</a></td>
+            <td><a href="mailto:protext@ctk.cz">protext@ctk.cz</a><br>+420 222 098 175</td>
+            <td><a href="mailto:protext@ctk.cz">protext@ctk.cz</a></td>
+            <td>ČTK; na webu ČTK je u nemovitostí zmiňována budova Opletalova, Praha 1 (přesná adresa Protextu není na homepage rozepsaná)</td>
+            <td><span class="warn">ceník veřejně nezobrazen</span></td>
+            <td><span class="warn">na dotaz</span></td>
+            <td>Nejde o redakci, ale o nejpraktičtější legální distribuční kanál pro zveřejnění a rozeslání tiskové zprávy do médií.</td>
+            <td><a href="https://www.protext.cz/">Protext ČTK</a><br><a href="https://www.ctk.cz/">ČTK</a></td>
+          </tr>
+
+          <tr>
+            <td><div class="publisher">Mediář</div></td>
+            <td><strong>Mediář</strong><br><span class="tag">odborné / média a marketing</span></td>
+            <td>Oborový web</td>
+            <td><a href="https://www.mediar.cz">mediar.cz</a></td>
+            <td><a href="mailto:potucek@mediar.cz">potucek@mediar.cz</a></td>
+            <td><a href="mailto:ondrej@aust.cz">ondrej@aust.cz</a><br><a href="mailto:potucek@mediar.cz">potucek@mediar.cz</a></td>
+            <td>Na stránce inzerce není poštovní adresa veřejně rozepsaná.</td>
+            <td><span class="warn">na dotaz</span></td>
+            <td><span class="warn">na dotaz</span></td>
+            <td>Hodí se pro B2B komunikaci v médiích, reklamě, marketingu a publishingu. Veřejně uvádí „možnosti inzerce a komerční prezentace“.</td>
+            <td><a href="https://www.mediar.cz/inzerce">Mediář - inzerce</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>
