@@ -1,0 +1,414 @@
+﻿<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Analýza konkurence JOSEPHINE na Slovensku</title>
+  <style>
+    @page { size: A4; margin: 12mm; }
+    body { margin: 0; font-family: Segoe UI, Arial, sans-serif; color: #1f2328; background: #f4f1eb; }
+    .wrap { max-width: 1500px; margin: 0 auto; padding: 28px 22px 50px; }
+    h1 { margin: 0 0 8px; font-size: 34px; }
+    .sub { margin: 0 0 20px; color: #5f6b76; }
+    .card { background: #fff; border: 1px solid #d7d1c7; border-radius: 14px; padding: 18px; margin-bottom: 18px; box-shadow: 0 8px 22px rgba(0,0,0,.05); }
+    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+    .meta { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 18px; }
+    .meta .box { background: #fff; border: 1px solid #d7d1c7; border-radius: 14px; padding: 14px; }
+    .meta .label { color: #6a7680; font-size: 13px; text-transform: uppercase; letter-spacing: .04em; }
+    .meta .value { font-size: 28px; font-weight: 700; margin-top: 4px; }
+    .bar-row { display: grid; grid-template-columns: 240px 1fr 140px; gap: 12px; align-items: center; margin: 8px 0; }
+    .bar-label { font-weight: 600; }
+    .bar-wrap { height: 16px; background: #ece6dc; border-radius: 999px; overflow: hidden; }
+    .bar { height: 100%; border-radius: 999px; }
+    .bar-value { text-align: right; font-variant-numeric: tabular-nums; }
+    table { width: 100%; border-collapse: collapse; }
+    th, td { border-top: 1px solid #e6dfd4; padding: 10px 8px; vertical-align: top; text-align: left; }
+    thead th { border-top: 0; background: #322f2d; color: #fff; position: sticky; top: 0; }
+    .table-wrap { overflow: auto; }
+    ul { margin: 0; padding-left: 18px; }
+    .note { color: #5f6b76; }
+    .small { font-size: 13px; }
+    a { color: #0d4f7a; }
+    code { background: #f0ece4; padding: 1px 6px; border-radius: 6px; }
+    @media print {
+      body { background: #fff; font-size: 10pt; }
+      .wrap { max-width: none; padding: 0; }
+      .grid { grid-template-columns: 1fr; }
+      .meta { grid-template-columns: repeat(2, 1fr); }
+      .card, .meta .box { box-shadow: none; break-inside: avoid; page-break-inside: avoid; }
+      thead th { position: static; }
+      .bar-row { grid-template-columns: 180px 1fr 120px; }
+      a { color: #1f2328; text-decoration: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Analýza konkurence JOSEPHINE na Slovensku</h1>
+    <p class="sub">Primární zdroje: slovenské CRZ a oficiální seznam zapsaných elektronických prostředků ÚVO. Vygenerováno 2026-03-27 15:06.</p>
+
+    <div class="meta">
+      <div class="box"><div class="label">Sledovaných systémů</div><div class="value">6</div></div>
+      <div class="box"><div class="label">Smluv v datasetu</div><div class="value">118</div></div>
+      <div class="box"><div class="label">Smluv JOSEPHINE</div><div class="value">32</div></div>
+      <div class="box"><div class="label">Součet hodnot v EUR s DPH</div><div class="value">1 092 702 EUR</div></div>
+    </div>
+
+    <section class="card">
+      <h2>Metodika a rozsah</h2>
+      <ul>
+        <li>Rámec trhu vychází z oficiálního seznamu zapsaných elektronických prostředků na webu Úradu pre verejné obstarávanie.</li>
+        <li>Do kvantitativního srovnání jsou zahrnuty slovenské nástroje s reálně dohledatelnou smluvní stopou v CRZ: JOSEPHINE, TENDERnet, ERANET, eBIZ platform (eZakazky / eAukcie / eProcurement), EVOSERVIS a ActiveProcurement.</li>
+        <li>Dotazy do CRZ kombinují název dodavatele a název systému, aby se omezily falešné shody a zůstaly smlouvy spojené s konkrétním elektronickým nástrojem.</li>
+        <li>Slovenské CRZ uvádí částky v tabulkách jako EUR s DPH; hodnotové grafy proto pracují právě s touto metrikou.</li>
+        <li>Stejně jako v české verzi nelze bez plošného čtení příloh PDF spolehlivě vytěžit přesné seatové počty licencí, proto report staví hlavně na počtu smluv, hodnotě, počtu zadavatelů a licenčně podobných kontraktech.</li>
+        <li>Státní platformy typu IS EVO nebo EKS nejsou součástí tohoto licenčně orientovaného srovnání, protože fungují v odlišném provozním modelu než komerční nástroje.</li>
+      </ul>
+      <p class="note small">Zdroj tržního rámce: <a href="https://www.uvo.gov.sk/zoznam-zapisanych-elektronickych-prostriedkov">ÚVO - Zoznam zapísaných elektronických prostriedkov</a><br>Zdroj smluvních dat: <a href="https://www.crz.gov.sk/central-register-of-contracts/">CRZ Slovakia</a></p>
+    </section>
+
+    <section class="card">
+      <h2>Souhrn podle systému</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Systém</th>
+              <th>Smluv</th>
+              <th>Zveřejněných hodnot</th>
+              <th>Nulových hodnot</th>
+              <th>Součet v EUR s DPH</th>
+              <th>Průměr v EUR s DPH</th>
+              <th>Unikátních zadavatelů</th>
+              <th>Licence / přístup</th>
+              <th>Podpora / servis</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+<td><strong>TENDERnet</strong></td>
+<td>42</td>
+<td>42</td>
+<td>7</td>
+<td>11 228 EUR</td>
+<td>267 EUR</td>
+<td>37</td>
+<td>35</td>
+<td>0</td>
+</tr>
+<tr>
+<td><strong>ERANET</strong></td>
+<td>34</td>
+<td>34</td>
+<td>12</td>
+<td>510 165 EUR</td>
+<td>15 005 EUR</td>
+<td>18</td>
+<td>0</td>
+<td>33</td>
+</tr>
+<tr>
+<td><strong>JOSEPHINE</strong></td>
+<td>32</td>
+<td>32</td>
+<td>4</td>
+<td>445 796 EUR</td>
+<td>13 931 EUR</td>
+<td>17</td>
+<td>12</td>
+<td>17</td>
+</tr>
+<tr>
+<td><strong>EVOSERVIS</strong></td>
+<td>4</td>
+<td>4</td>
+<td>0</td>
+<td>89 250 EUR</td>
+<td>22 313 EUR</td>
+<td>2</td>
+<td>4</td>
+<td>4</td>
+</tr>
+<tr>
+<td><strong>ActiveProcurement</strong></td>
+<td>3</td>
+<td>3</td>
+<td>1</td>
+<td>14 472 EUR</td>
+<td>4 824 EUR</td>
+<td>1</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr>
+<td><strong>eBIZ platform</strong></td>
+<td>3</td>
+<td>3</td>
+<td>0</td>
+<td>21 791 EUR</td>
+<td>7 264 EUR</td>
+<td>3</td>
+<td>2</td>
+<td>1</td>
+</tr>
+
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <div class="grid">
+      <section class='card'><h2>1. Počet smluv v CRZ</h2>
+<div class='bar-row'><div class='bar-label'>TENDERnet</div><div class='bar-wrap'><div class='bar' style='width:100%; background:#8b3d2e'></div></div><div class='bar-value'>42</div></div>
+<div class='bar-row'><div class='bar-label'>ERANET</div><div class='bar-wrap'><div class='bar' style='width:80.95%; background:#8b3d2e'></div></div><div class='bar-value'>34</div></div>
+<div class='bar-row'><div class='bar-label'>JOSEPHINE</div><div class='bar-wrap'><div class='bar' style='width:76.19%; background:#8b3d2e'></div></div><div class='bar-value'>32</div></div>
+<div class='bar-row'><div class='bar-label'>EVOSERVIS</div><div class='bar-wrap'><div class='bar' style='width:9.52%; background:#8b3d2e'></div></div><div class='bar-value'>4</div></div>
+<div class='bar-row'><div class='bar-label'>ActiveProcurement</div><div class='bar-wrap'><div class='bar' style='width:7.14%; background:#8b3d2e'></div></div><div class='bar-value'>3</div></div>
+<div class='bar-row'><div class='bar-label'>eBIZ platform</div><div class='bar-wrap'><div class='bar' style='width:7.14%; background:#8b3d2e'></div></div><div class='bar-value'>3</div></div>
+</section>
+
+      <section class='card'><h2>2. Součet zveřejněných hodnot v EUR s DPH</h2>
+<div class='bar-row'><div class='bar-label'>ERANET</div><div class='bar-wrap'><div class='bar' style='width:100%; background:#275d38'></div></div><div class='bar-value'>510 165 EUR</div></div>
+<div class='bar-row'><div class='bar-label'>JOSEPHINE</div><div class='bar-wrap'><div class='bar' style='width:87.38%; background:#275d38'></div></div><div class='bar-value'>445 796 EUR</div></div>
+<div class='bar-row'><div class='bar-label'>EVOSERVIS</div><div class='bar-wrap'><div class='bar' style='width:17.49%; background:#275d38'></div></div><div class='bar-value'>89 250 EUR</div></div>
+<div class='bar-row'><div class='bar-label'>eBIZ platform</div><div class='bar-wrap'><div class='bar' style='width:4.27%; background:#275d38'></div></div><div class='bar-value'>21 791 EUR</div></div>
+<div class='bar-row'><div class='bar-label'>ActiveProcurement</div><div class='bar-wrap'><div class='bar' style='width:2.84%; background:#275d38'></div></div><div class='bar-value'>14 472 EUR</div></div>
+<div class='bar-row'><div class='bar-label'>TENDERnet</div><div class='bar-wrap'><div class='bar' style='width:2.2%; background:#275d38'></div></div><div class='bar-value'>11 228 EUR</div></div>
+</section>
+
+      <section class='card'><h2>3. Počet unikátních veřejných zadavatelů</h2>
+<div class='bar-row'><div class='bar-label'>TENDERnet</div><div class='bar-wrap'><div class='bar' style='width:100%; background:#2b5d8b'></div></div><div class='bar-value'>37</div></div>
+<div class='bar-row'><div class='bar-label'>ERANET</div><div class='bar-wrap'><div class='bar' style='width:48.65%; background:#2b5d8b'></div></div><div class='bar-value'>18</div></div>
+<div class='bar-row'><div class='bar-label'>JOSEPHINE</div><div class='bar-wrap'><div class='bar' style='width:45.95%; background:#2b5d8b'></div></div><div class='bar-value'>17</div></div>
+<div class='bar-row'><div class='bar-label'>eBIZ platform</div><div class='bar-wrap'><div class='bar' style='width:8.11%; background:#2b5d8b'></div></div><div class='bar-value'>3</div></div>
+<div class='bar-row'><div class='bar-label'>EVOSERVIS</div><div class='bar-wrap'><div class='bar' style='width:5.41%; background:#2b5d8b'></div></div><div class='bar-value'>2</div></div>
+<div class='bar-row'><div class='bar-label'>ActiveProcurement</div><div class='bar-wrap'><div class='bar' style='width:2.7%; background:#2b5d8b'></div></div><div class='bar-value'>1</div></div>
+</section>
+
+      <section class='card'><h2>4. Smlouvy licenčního / přístupového typu</h2>
+<div class='bar-row'><div class='bar-label'>TENDERnet</div><div class='bar-wrap'><div class='bar' style='width:100%; background:#8a5a00'></div></div><div class='bar-value'>35</div></div>
+<div class='bar-row'><div class='bar-label'>JOSEPHINE</div><div class='bar-wrap'><div class='bar' style='width:34.29%; background:#8a5a00'></div></div><div class='bar-value'>12</div></div>
+<div class='bar-row'><div class='bar-label'>EVOSERVIS</div><div class='bar-wrap'><div class='bar' style='width:11.43%; background:#8a5a00'></div></div><div class='bar-value'>4</div></div>
+<div class='bar-row'><div class='bar-label'>eBIZ platform</div><div class='bar-wrap'><div class='bar' style='width:5.71%; background:#8a5a00'></div></div><div class='bar-value'>2</div></div>
+<div class='bar-row'><div class='bar-label'>ERANET</div><div class='bar-wrap'><div class='bar' style='width:0%; background:#8a5a00'></div></div><div class='bar-value'>0</div></div>
+<div class='bar-row'><div class='bar-label'>ActiveProcurement</div><div class='bar-wrap'><div class='bar' style='width:0%; background:#8a5a00'></div></div><div class='bar-value'>0</div></div>
+</section>
+
+      <section class='card'><h2>5. JOSEPHINE - nejčastější témata v popisech smluv</h2>
+<div class='bar-row'><div class='bar-label'>Licence / př&#237;stup / už&#237;v&#225;n&#237;</div><div class='bar-wrap'><div class='bar' style='width:70.59%; background:#5b3f82'></div></div><div class='bar-value'>12</div></div>
+<div class='bar-row'><div class='bar-label'>Podpora / servis / provoz</div><div class='bar-wrap'><div class='bar' style='width:100%; background:#5b3f82'></div></div><div class='bar-value'>17</div></div>
+<div class='bar-row'><div class='bar-label'>TENDERBOX</div><div class='bar-wrap'><div class='bar' style='width:100%; background:#5b3f82'></div></div><div class='bar-value'>17</div></div>
+<div class='bar-row'><div class='bar-label'>WORKFLOW</div><div class='bar-wrap'><div class='bar' style='width:11.76%; background:#5b3f82'></div></div><div class='bar-value'>2</div></div>
+<div class='bar-row'><div class='bar-label'>WENDY</div><div class='bar-wrap'><div class='bar' style='width:17.65%; background:#5b3f82'></div></div><div class='bar-value'>3</div></div>
+<div class='bar-row'><div class='bar-label'>Aukce</div><div class='bar-wrap'><div class='bar' style='width:0%; background:#5b3f82'></div></div><div class='bar-value'>0</div></div>
+</section>
+
+      <section class='card'><h2>6. Smlouvy podle roku (top 4 systémy)</h2><div class='table-wrap'><table><thead><tr><th>Systém</th>
+<th>2021</th>
+<th>2022</th>
+<th>2023</th>
+<th>2024</th>
+<th>2025</th>
+<th>2026</th>
+</tr></thead><tbody>
+<tr><td><strong>JOSEPHINE</strong></td>
+<td style='background: rgba(139,61,46,0.31); color: #222; text-align:center;'>5</td>
+<td style='background: rgba(139,61,46,0.22); color: #222; text-align:center;'>3</td>
+<td style='background: rgba(139,61,46,0.4); color: #222; text-align:center;'>7</td>
+<td style='background: rgba(139,61,46,0.36); color: #222; text-align:center;'>6</td>
+<td style='background: rgba(139,61,46,0.5); color: #fff; text-align:center;'>9</td>
+<td style='background: rgba(139,61,46,0.17); color: #222; text-align:center;'>2</td>
+</tr>
+<tr><td><strong>TENDERnet</strong></td>
+<td style='background: rgba(139,61,46,0.08); color: #222; text-align:center;'>0</td>
+<td style='background: rgba(139,61,46,0.96); color: #fff; text-align:center;'>19</td>
+<td style='background: rgba(139,61,46,0.22); color: #222; text-align:center;'>3</td>
+<td style='background: rgba(139,61,46,0.45); color: #222; text-align:center;'>8</td>
+<td style='background: rgba(139,61,46,0.59); color: #fff; text-align:center;'>11</td>
+<td style='background: rgba(139,61,46,0.13); color: #222; text-align:center;'>1</td>
+</tr>
+<tr><td><strong>ERANET</strong></td>
+<td style='background: rgba(139,61,46,0.36); color: #222; text-align:center;'>6</td>
+<td style='background: rgba(139,61,46,0.5); color: #fff; text-align:center;'>9</td>
+<td style='background: rgba(139,61,46,0.4); color: #222; text-align:center;'>7</td>
+<td style='background: rgba(139,61,46,0.31); color: #222; text-align:center;'>5</td>
+<td style='background: rgba(139,61,46,0.31); color: #222; text-align:center;'>5</td>
+<td style='background: rgba(139,61,46,0.17); color: #222; text-align:center;'>2</td>
+</tr>
+<tr><td><strong>eBIZ platform</strong></td>
+<td style='background: rgba(139,61,46,0.08); color: #222; text-align:center;'>0</td>
+<td style='background: rgba(139,61,46,0.17); color: #222; text-align:center;'>2</td>
+<td style='background: rgba(139,61,46,0.13); color: #222; text-align:center;'>1</td>
+<td style='background: rgba(139,61,46,0.08); color: #222; text-align:center;'>0</td>
+<td style='background: rgba(139,61,46,0.08); color: #222; text-align:center;'>0</td>
+<td style='background: rgba(139,61,46,0.08); color: #222; text-align:center;'>0</td>
+</tr>
+</tbody></table></div></section>
+
+    </div>
+
+    <section class='card'><h2>Top 20 zveřejněných hodnot smluv</h2><div class='table-wrap'><table><thead><tr><th>Systém</th><th>Zadavatel</th><th>Popis</th><th>Datum</th><th>Hodnota v EUR s DPH</th></tr></thead><tbody>
+<tr>
+<td>ERANET</td>
+<td>Slovensk&#225; elektrizačn&#225; prenosov&#225; s&#250;stava, a.s.</td>
+<td>Zmluva o poskytovan&#237; služieb IS eranet a s&#250;visiacich služieb</td>
+<td>2023-09-26</td>
+<td>221 685 EUR</td>
+</tr>
+<tr>
+<td>JOSEPHINE</td>
+<td>Banskobystrick&#253; samospr&#225;vny kraj</td>
+<td>Zmluva o poskytnut&#237; syst&#233;mov PROEBIZ - TENDERBOX, JOSEPHINE a MARQUET a služieb s nimi spojen&#253;ch</td>
+<td>2023-09-14</td>
+<td>71 040 EUR</td>
+</tr>
+<tr>
+<td>JOSEPHINE</td>
+<td>Ministerstvo vn&#250;tra SR</td>
+<td>Zmluva o poskytnut&#237; syst&#233;mov PROEBIZ JOSEPHINE, TENDERBOX a WORKFLOW a služieb s nimi spojen&#253;ch</td>
+<td>2026-01-08</td>
+<td>54 612 EUR</td>
+</tr>
+<tr>
+<td>ERANET</td>
+<td>Železničn&#225; spoločnosť Slovensko, a.s.</td>
+<td>Zmluva o poskytovan&#237; IS eranet a s&#250;viasiacich služieb</td>
+<td>2024-05-10</td>
+<td>54 000 EUR</td>
+</tr>
+<tr>
+<td>JOSEPHINE</td>
+<td>Ministerstvo vn&#250;tra SR (Sekcia ekonomiky MV SR)</td>
+<td>Zmluva o poskytnut&#237; syst&#233;mov PROEBIZ JOSEPHINE, TENDERBOX a WORKFLOW a služieb s nimi spojen&#253;ch</td>
+<td>2021-12-14</td>
+<td>46 080 EUR</td>
+</tr>
+<tr>
+<td>ERANET</td>
+<td>Ministerstvo životn&#233;ho prostredia SR</td>
+<td>Zmluva o poskytnut&#237; syst&#233;mu ERANET a s&#250;visiacich služieb</td>
+<td>2022-09-28</td>
+<td>44 424 EUR</td>
+</tr>
+<tr>
+<td>JOSEPHINE</td>
+<td>Univerzita Komensk&#233;ho v Bratislave - Rektor&#225;t</td>
+<td>Zmluva o poskytnut&#237; syst&#233;mov PROEBIZ JOSEPHINE a PROEBIZ TENDERBOX a služieb s t&#253;m spojen&#253;ch</td>
+<td>2024-12-13</td>
+<td>39 660 EUR</td>
+</tr>
+<tr>
+<td>JOSEPHINE</td>
+<td>Ministerstvo financi&#237; SR</td>
+<td>Zmluva o poskytnut&#237; pr&#237;stupu a použ&#237;van&#237; syst&#233;mu PROEBIZ JOSEPHINE vr&#225;tane DNS, syst&#233;mu PROEBIZ TENDERBOX a poskytovan&#237; s&#250;visiacich služieb</td>
+<td>2025-05-27</td>
+<td>33 653 EUR</td>
+</tr>
+<tr>
+<td>JOSEPHINE</td>
+<td>Ministerstvo financi&#237; SR</td>
+<td>Zmluva o poskytnut&#237; pr&#237;stupu k softv&#233;rov&#233;mu syst&#233;mu PROEBIZ JOSEPHINE vr&#225;tane DNS, syst&#233;mu PROEBIZ TENDERBOX a poskytovan&#237; s&#250;visiacich služieb</td>
+<td>2021-05-27</td>
+<td>31 200 EUR</td>
+</tr>
+<tr>
+<td>ERANET</td>
+<td>Št&#225;tna ochrana pr&#237;rody Slovenskej republiky</td>
+<td>Zmluva o poskytnut&#237; syst&#233;mu ERANET a s&#250;visiacich služieb</td>
+<td>2021-11-16</td>
+<td>29 640 EUR</td>
+</tr>
+<tr>
+<td>EVOSERVIS</td>
+<td>Ministerstvo pr&#225;ce, soci&#225;lnych vec&#237; a rodiny SR</td>
+<td>Licenčn&#225; zmluva na použ&#237;vanie certifikovan&#233;ho elektronick&#233;ho n&#225;stroja EVOSERVIS za &#250;čelom procesovania DNS označen&#253;ch v EN EVOSERVIS pomocou ID: 9554005996DNS a 7576301796DNS</td>
+<td>2024-08-07</td>
+<td>24 000 EUR</td>
+</tr>
+<tr>
+<td>EVOSERVIS</td>
+<td>Ministerstvo pr&#225;ce, soci&#225;lnych vec&#237; a rodiny SR</td>
+<td>Licenčn&#225; zmluva na použ&#237;vanie certifikovan&#233;ho elektronick&#233;ho n&#225;stroja EVOSERVIS</td>
+<td>2023-08-09</td>
+<td>24 000 EUR</td>
+</tr>
+<tr>
+<td>EVOSERVIS</td>
+<td>Ministerstvo pr&#225;ce, soci&#225;lnych vec&#237; a rodiny SR</td>
+<td>Licenčn&#225; zmluva na použ&#237;vanie certifikovan&#233;ho elektronick&#233;ho n&#225;stroja EVOSERVIS za &#250;čelom uchovania dokument&#225;cie z verejn&#233;ho obstar&#225;vania v zmysle &#167; 24 ods. 1 z&#225;kona č. 343/2015 Z. z. v znen&#237; neskorš&#237;ch predpisov</td>
+<td>2025-08-11</td>
+<td>20 910 EUR</td>
+</tr>
+<tr>
+<td>ERANET</td>
+<td>Št&#225;tna ochrana pr&#237;rody Slovenskej republiky</td>
+<td>Zmluva o poskytnut&#237; IS eranet a s&#250;visiacich služieb</td>
+<td>2024-10-10</td>
+<td>20 412 EUR</td>
+</tr>
+<tr>
+<td>EVOSERVIS</td>
+<td>V&#253;chodoslovensk&#253; &#250;stav srdcov&#253;ch a cievnych chor&#244;b, Košice</td>
+<td>Licenčn&#225; zmluva na použ&#237;vanie certifikovan&#233;ho elektronick&#233;ho n&#225;stroja EVOSERVIS - uchovanie dokument&#225;cie z verejn&#233;ho obstar&#225;vania</td>
+<td>2022-10-18</td>
+<td>20 340 EUR</td>
+</tr>
+<tr>
+<td>ERANET</td>
+<td>Ministerstvo životn&#233;ho prostredia SR</td>
+<td>Zmluva o poskytnut&#237; syst&#233;mu IS eranet a s&#250;visiacich služieb</td>
+<td>2024-11-15</td>
+<td>19 620 EUR</td>
+</tr>
+<tr>
+<td>JOSEPHINE</td>
+<td>Ministerstvo dopravy SR</td>
+<td>Zmluva o poskytnut&#237; pr&#237;stupov do softv&#233;rov&#253;ch syst&#233;mov PROEBIZ WENDY, PROEBIZ JOSEPHINE a PROEBIZ TENDERBOX a o poskytnut&#237; s&#250;visiacich služieb</td>
+<td>2025-08-15</td>
+<td>19 053 EUR</td>
+</tr>
+<tr>
+<td>ERANET</td>
+<td>Z&#225;padoslovensk&#225; vod&#225;rensk&#225; spoločnosť, a.s.</td>
+<td>Zmluva o poskytnut&#237; syst&#233;mu ERANET a s&#250;visiacich služieb č. ZML-1221001</td>
+<td>2022-12-20</td>
+<td>17 760 EUR</td>
+</tr>
+<tr>
+<td>JOSEPHINE</td>
+<td>Dopravn&#253; podnik Bratislava, akciov&#225; spoločnosť</td>
+<td>Zmluva o poskytnut&#237; syst&#233;mov PROEBIZ TENDERBOX, PROBIZ JOSEPHINE a PROEBIZ WENDY a služieb s nimi spojen&#253;ch</td>
+<td>2025-05-30</td>
+<td>15 560 EUR</td>
+</tr>
+<tr>
+<td>JOSEPHINE</td>
+<td>Všeobecn&#225; zdravotn&#225; poisťovňa a.s.</td>
+<td>JOSEPHINE PROEBIZ na 3 roky</td>
+<td>2025-12-09</td>
+<td>14 580 EUR</td>
+</tr>
+</tbody></table></div></section>
+
+
+    <section class="card">
+      <h2>Hlavní závěry</h2>
+      <ul>
+        <li>Na Slovensku má JOSEPHINE viditelnou veřejnou smluvní stopu, ale podle počtu dohledaných smluv není největším komerčním footprintem v CRZ.</li>
+        <li>Silnější nebo srovnatelnou stopu v CRZ vykazují zejména TENDERnet, ERANET a eBIZ platform.</li>
+        <li>U JOSEPHINE se v popisech smluv vedle licence a podpory často objevují i další moduly stejného vendor stacku, zejména TENDERBOX a WORKFLOW.</li>
+        <li>CRZ je vhodné pro srovnání veřejné obchodní stopy a zveřejněných hodnot, ale nikoli pro precizní seat-based srovnání licencí bez ruční práce nad přílohami.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Výstupní soubory</h2>
+      <ul>
+        <li><code>contracts_raw.csv</code> - surová data použitá v analýze</li>
+        <li><code>summary.csv</code> - souhrn po systémech</li>
+        <li><code>report.html</code> - report s grafy</li>
+      </ul>
+    </section>
+  </div>
+</body>
+</html>

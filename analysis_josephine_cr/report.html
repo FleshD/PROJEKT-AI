@@ -1,0 +1,1075 @@
+﻿<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Analýza konkurence JOSEPHINE v České republice</title>
+  <style>
+    @page { size: A4 landscape; margin: 10mm; }
+    body { margin: 0; font-family: Segoe UI, Arial, sans-serif; color: #1f2328; background: #f5f1ea; }
+    .wrap { max-width: 1640px; margin: 0 auto; padding: 24px 20px 44px; }
+    h1 { margin: 0 0 8px; font-size: 32px; line-height: 1.15; }
+    h2 { margin: 0 0 12px; font-size: 20px; }
+    h3 { margin: 0 0 10px; font-size: 18px; }
+    .sub { margin: 0 0 18px; color: #5f6b76; }
+    .card { background: #fff; border: 1px solid #d9d1c4; border-radius: 14px; padding: 16px 16px 14px; margin-bottom: 16px; box-shadow: 0 6px 18px rgba(34, 24, 11, .06); }
+    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .meta { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 12px; margin-bottom: 16px; }
+    .meta .box { background: #fff; border: 1px solid #d9d1c4; border-radius: 14px; padding: 12px 14px; }
+    .meta .label { color: #6a7680; font-size: 12px; text-transform: uppercase; letter-spacing: .04em; }
+    .meta .value { font-size: 24px; font-weight: 700; margin-top: 6px; }
+    .bar-row { display: grid; grid-template-columns: 220px 1fr 128px; gap: 10px; align-items: center; margin: 8px 0; }
+    .bar-label { font-weight: 600; font-size: 13px; }
+    .bar-wrap { height: 14px; background: #ece6dc; border-radius: 999px; overflow: hidden; }
+    .bar { height: 100%; border-radius: 999px; }
+    .bar-value { text-align: right; font-size: 13px; font-variant-numeric: tabular-nums; }
+    table { width: 100%; border-collapse: collapse; }
+    table.fixed { table-layout: fixed; }
+    th, td { border-top: 1px solid #e6dfd4; padding: 8px 6px; vertical-align: top; text-align: left; }
+    thead th { border-top: 0; background: #36312d; color: #fff; position: static; }
+    .table-wrap { overflow: visible; }
+    .compact-table th, .compact-table td { font-size: 12px; line-height: 1.35; word-break: break-word; overflow-wrap: anywhere; }
+    .summary-table th:nth-child(1), .summary-table td:nth-child(1) { width: 16%; }
+    .summary-table th:nth-child(2), .summary-table td:nth-child(2) { width: 7%; }
+    .summary-table th:nth-child(3), .summary-table td:nth-child(3) { width: 12%; }
+    .summary-table th:nth-child(4), .summary-table td:nth-child(4) { width: 11%; }
+    .summary-table th:nth-child(5), .summary-table td:nth-child(5) { width: 10%; }
+    .summary-table th:nth-child(6), .summary-table td:nth-child(6) { width: 10%; }
+    .summary-table th:nth-child(7), .summary-table td:nth-child(7) { width: 11%; }
+    .summary-table th:nth-child(8), .summary-table td:nth-child(8) { width: 13%; }
+    .summary-table th:nth-child(9), .summary-table td:nth-child(9) { width: 10%; }
+    .contracts-table th:nth-child(1), .contracts-table td:nth-child(1) { width: 9%; }
+    .contracts-table th:nth-child(2), .contracts-table td:nth-child(2) { width: 20%; }
+    .contracts-table th:nth-child(3), .contracts-table td:nth-child(3) { width: 17%; }
+    .contracts-table th:nth-child(4), .contracts-table td:nth-child(4) { width: 35%; }
+    .contracts-table th:nth-child(5), .contracts-table td:nth-child(5) { width: 8%; }
+    .contracts-table th:nth-child(6), .contracts-table td:nth-child(6) { width: 11%; }
+    .system-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .mini-card { border: 1px solid #e0d8ca; border-radius: 12px; padding: 12px; background: #fcfbf8; break-inside: avoid; }
+    .mini-breakdown th:nth-child(1), .mini-breakdown td:nth-child(1) { width: 44%; }
+    .mini-breakdown th:nth-child(2), .mini-breakdown td:nth-child(2) { width: 14%; }
+    .mini-breakdown th:nth-child(3), .mini-breakdown td:nth-child(3) { width: 14%; }
+    .mini-breakdown th:nth-child(4), .mini-breakdown td:nth-child(4) { width: 28%; }
+    ul { margin: 0; padding-left: 18px; }
+    .note { color: #5f6b76; }
+    .small { font-size: 12px; }
+    .pill { display: inline-block; padding: 4px 8px; border-radius: 999px; background: #f0ece4; border: 1px solid #d7d1c7; font-weight: 600; }
+    a { color: #0d4f7a; }
+    code { background: #f0ece4; padding: 1px 6px; border-radius: 6px; }
+    @media print {
+      body { background: #fff; font-size: 9pt; }
+      .wrap { max-width: none; padding: 0; }
+      .grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+      .meta { grid-template-columns: repeat(6, 1fr); gap: 8px; }
+      .card, .meta .box, .mini-card { box-shadow: none; break-inside: avoid; page-break-inside: avoid; }
+      .bar-row { grid-template-columns: 170px 1fr 104px; gap: 8px; }
+      .compact-table th, .compact-table td { font-size: 10.5px; padding: 6px 5px; }
+      a { color: #1f2328; text-decoration: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Analýza konkurence JOSEPHINE v České republice</h1>
+    <p class="sub">Primární zdroj: registr smluv. Výstup odděluje přímé poskytování SW od rozšířených služeb a poradensko-administrativních činností. Vygenerováno 2026-03-31 14:23.</p>
+
+    <div class="meta">
+      <div class="box"><div class="label">Sledovaných systémů</div><div class="value">7</div></div>
+      <div class="box"><div class="label">Smluv v datasetu</div><div class="value">947</div></div>
+      <div class="box"><div class="label">Přímé SW kontrakty</div><div class="value">280</div></div>
+      <div class="box"><div class="label">Další činnosti</div><div class="value">517</div></div>
+      <div class="box"><div class="label">Bez použitelné bez-DPH ceny</div><div class="value">205</div></div>
+      <div class="box"><div class="label">Součet zveřejněných hodnot</div><div class="value">223 417 418 Kč</div></div>
+    </div>
+
+    <section class="card">
+      <h2>Metodika a omezení</h2>
+      <ul>
+        <li>Rámec trhu vychází z oficiálního seznamu certifikovaných elektronických nástrojů na portálu veřejných zakázek.</li>
+        <li>Jádro komerčního srovnání tvoří JOSEPHINE, E-ZAK, Tender arena a ZADAVATEL.CZ. Doplňkově jsou zahrnuty menší systémy s viditelnou stopou v registru: FirstBuySale, CENT a Eveza.</li>
+        <li>Pro každý systém dotaz do registru kombinuje jméno dodavatele a název systému v předmětu smlouvy nebo v prohledávatelném textu.</li>
+        <li>Každá smlouva je nově klasifikována do čtyř typů: <strong>přímé poskytování SW</strong>, <strong>SW + rozšířené služby</strong>, <strong>konzultace / administrace / právní podpora</strong> a <strong>nejasné</strong>.</li>
+        <li>Hodnotové grafy používají pouze částky zveřejněné explicitně jako CZK bez DPH. Záznamy se zaslepenou cenou, s cenou pouze s DPH nebo bez jasného režimu DPH jsou z těchto součtů vyloučeny.</li>
+        <li>Registr smluv je vhodný pro srovnání veřejné obchodní stopy, nikoli pro přesný výpočet tržeb dodavatelů SW. V tomto datasetu nemá použitelnou bez-DPH hodnotu 205 z 947 smluv, tedy 21,6 %.</li>
+        <li>Vysoké hodnoty v registru nelze automaticky číst jako tržbu za software. Část TOP smluv představuje konzultace, administraci, zastupování zadavatele nebo jiné ne-softwarové činnosti.</li>
+        <li>Přesné seatové počty licencí nejsou bez plošného čtení příloh PDF a OCR spolehlivě zjistitelné. Report proto stojí hlavně na počtu smluv, počtu zadavatelů, objemu zveřejněných hodnot a typu plnění.</li>
+        <li>NEN není v kvantitativním srovnání zahrnut, protože funguje v odlišném veřejném provozním modelu a není přímo srovnatelný s komerčními licenčními stopami v registru.</li>
+      </ul>
+      <p class="note small">Zdroj pro vymezení trhu: <a href="https://portal-vz.cz/elektronicke-zadavani-verejnych-zakazek/seznam-certifikovanych-el-nastroju-dle-zakona-c-134-2016-sb/">portal-vz.cz - seznam certifikovaných elektronických nástrojů</a></p>
+      <p class='note small'>Př&#237;klad z validovan&#253;ch dat: ZADAVATEL.CZ / Fyzik&#225;ln&#237; &#250;stav AV ČR, v. v. i. / 9&#160;649&#160;000 Kč - R&#225;mcov&#225; smlouva o zajištěn&#237; administrace zad&#225;vac&#237;ch ř&#237;zen&#237; a dalš&#237;ch zadavatelsk&#253;ch činnost&#237;.</p>
+    </section>
+
+    <section class="card">
+      <h2>Souhrn podle systému</h2>
+      <div class="table-wrap">
+        <table class="fixed compact-table summary-table">
+          <thead>
+            <tr>
+              <th>Systém</th>
+              <th>Smluv</th>
+              <th>Bez použitelné bez-DPH hodnoty</th>
+              <th>Součet bez DPH</th>
+              <th>Unikátních zadavatelů</th>
+              <th>Přímé SW</th>
+              <th>SW + rozšířené služby</th>
+              <th>Konzultace / admin / právní podpora</th>
+              <th>Nejasné</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+<td><strong>E-ZAK</strong></td>
+<td>400</td>
+<td>79<div class='small note'>19,8 %</div></td>
+<td>75 009 254 Kč</td>
+<td>165</td>
+<td>137</td>
+<td>196</td>
+<td>47</td>
+<td>20</td>
+</tr>
+<tr>
+<td><strong>ZADAVATEL.CZ</strong></td>
+<td>248</td>
+<td>44<div class='small note'>17,7 %</div></td>
+<td>64 214 923 Kč</td>
+<td>87</td>
+<td>14</td>
+<td>0</td>
+<td>178</td>
+<td>56</td>
+</tr>
+<tr>
+<td><strong>Tender arena</strong></td>
+<td>187</td>
+<td>46<div class='small note'>24,6 %</div></td>
+<td>54 706 620 Kč</td>
+<td>82</td>
+<td>93</td>
+<td>23</td>
+<td>26</td>
+<td>45</td>
+</tr>
+<tr>
+<td><strong>JOSEPHINE</strong></td>
+<td>40</td>
+<td>14<div class='small note'>35,0 %</div></td>
+<td>4 053 547 Kč</td>
+<td>24</td>
+<td>15</td>
+<td>25</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><strong>CENT</strong></td>
+<td>33</td>
+<td>11<div class='small note'>33,3 %</div></td>
+<td>2 058 000 Kč</td>
+<td>19</td>
+<td>6</td>
+<td>0</td>
+<td>20</td>
+<td>7</td>
+</tr>
+<tr>
+<td><strong>FirstBuySale</strong></td>
+<td>32</td>
+<td>11<div class='small note'>34,4 %</div></td>
+<td>20 190 455 Kč</td>
+<td>26</td>
+<td>13</td>
+<td>1</td>
+<td>0</td>
+<td>18</td>
+</tr>
+<tr>
+<td><strong>Eveza</strong></td>
+<td>7</td>
+<td>0<div class='small note'>0,0 %</div></td>
+<td>3 184 619 Kč</td>
+<td>4</td>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+<td>4</td>
+</tr>
+
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <div class="grid">
+      <section class='card'><h2>1. Počet smluv v registru</h2>
+<div class='bar-row'><div class='bar-label'>E-ZAK</div><div class='bar-wrap'><div class='bar' style='width:100%; background:#8b3d2e'></div></div><div class='bar-value'>400</div></div>
+<div class='bar-row'><div class='bar-label'>ZADAVATEL.CZ</div><div class='bar-wrap'><div class='bar' style='width:62%; background:#8b3d2e'></div></div><div class='bar-value'>248</div></div>
+<div class='bar-row'><div class='bar-label'>Tender arena</div><div class='bar-wrap'><div class='bar' style='width:46.75%; background:#8b3d2e'></div></div><div class='bar-value'>187</div></div>
+<div class='bar-row'><div class='bar-label'>JOSEPHINE</div><div class='bar-wrap'><div class='bar' style='width:10%; background:#8b3d2e'></div></div><div class='bar-value'>40</div></div>
+<div class='bar-row'><div class='bar-label'>CENT</div><div class='bar-wrap'><div class='bar' style='width:8.25%; background:#8b3d2e'></div></div><div class='bar-value'>33</div></div>
+<div class='bar-row'><div class='bar-label'>FirstBuySale</div><div class='bar-wrap'><div class='bar' style='width:8%; background:#8b3d2e'></div></div><div class='bar-value'>32</div></div>
+<div class='bar-row'><div class='bar-label'>Eveza</div><div class='bar-wrap'><div class='bar' style='width:1.75%; background:#8b3d2e'></div></div><div class='bar-value'>7</div></div>
+</section>
+
+      <section class='card'><h2>2. Přímé poskytování SW - počet smluv</h2>
+<div class='bar-row'><div class='bar-label'>E-ZAK</div><div class='bar-wrap'><div class='bar' style='width:100%; background:#275d38'></div></div><div class='bar-value'>137</div></div>
+<div class='bar-row'><div class='bar-label'>Tender arena</div><div class='bar-wrap'><div class='bar' style='width:67.88%; background:#275d38'></div></div><div class='bar-value'>93</div></div>
+<div class='bar-row'><div class='bar-label'>JOSEPHINE</div><div class='bar-wrap'><div class='bar' style='width:10.95%; background:#275d38'></div></div><div class='bar-value'>15</div></div>
+<div class='bar-row'><div class='bar-label'>ZADAVATEL.CZ</div><div class='bar-wrap'><div class='bar' style='width:10.22%; background:#275d38'></div></div><div class='bar-value'>14</div></div>
+<div class='bar-row'><div class='bar-label'>FirstBuySale</div><div class='bar-wrap'><div class='bar' style='width:9.49%; background:#275d38'></div></div><div class='bar-value'>13</div></div>
+<div class='bar-row'><div class='bar-label'>CENT</div><div class='bar-wrap'><div class='bar' style='width:4.38%; background:#275d38'></div></div><div class='bar-value'>6</div></div>
+<div class='bar-row'><div class='bar-label'>Eveza</div><div class='bar-wrap'><div class='bar' style='width:1.46%; background:#275d38'></div></div><div class='bar-value'>2</div></div>
+</section>
+
+      <section class='card'><h2>3. Další činnosti mimo přímý SW - počet smluv</h2>
+<div class='bar-row'><div class='bar-label'>E-ZAK</div><div class='bar-wrap'><div class='bar' style='width:100%; background:#8a5a00'></div></div><div class='bar-value'>243</div></div>
+<div class='bar-row'><div class='bar-label'>ZADAVATEL.CZ</div><div class='bar-wrap'><div class='bar' style='width:73.25%; background:#8a5a00'></div></div><div class='bar-value'>178</div></div>
+<div class='bar-row'><div class='bar-label'>Tender arena</div><div class='bar-wrap'><div class='bar' style='width:20.16%; background:#8a5a00'></div></div><div class='bar-value'>49</div></div>
+<div class='bar-row'><div class='bar-label'>JOSEPHINE</div><div class='bar-wrap'><div class='bar' style='width:10.29%; background:#8a5a00'></div></div><div class='bar-value'>25</div></div>
+<div class='bar-row'><div class='bar-label'>CENT</div><div class='bar-wrap'><div class='bar' style='width:8.23%; background:#8a5a00'></div></div><div class='bar-value'>20</div></div>
+<div class='bar-row'><div class='bar-label'>Eveza</div><div class='bar-wrap'><div class='bar' style='width:0.41%; background:#8a5a00'></div></div><div class='bar-value'>1</div></div>
+<div class='bar-row'><div class='bar-label'>FirstBuySale</div><div class='bar-wrap'><div class='bar' style='width:0.41%; background:#8a5a00'></div></div><div class='bar-value'>1</div></div>
+</section>
+
+      <section class='card'><h2>4. Přímé poskytování SW - součet zveřejněných hodnot</h2>
+<div class='bar-row'><div class='bar-label'>Tender arena</div><div class='bar-wrap'><div class='bar' style='width:100%; background:#2b5d8b'></div></div><div class='bar-value'>27 604 739 Kč</div></div>
+<div class='bar-row'><div class='bar-label'>E-ZAK</div><div class='bar-wrap'><div class='bar' style='width:70.78%; background:#2b5d8b'></div></div><div class='bar-value'>19 539 669 Kč</div></div>
+<div class='bar-row'><div class='bar-label'>FirstBuySale</div><div class='bar-wrap'><div class='bar' style='width:22.34%; background:#2b5d8b'></div></div><div class='bar-value'>6 167 200 Kč</div></div>
+<div class='bar-row'><div class='bar-label'>Eveza</div><div class='bar-wrap'><div class='bar' style='width:7.41%; background:#2b5d8b'></div></div><div class='bar-value'>2 044 575 Kč</div></div>
+<div class='bar-row'><div class='bar-label'>JOSEPHINE</div><div class='bar-wrap'><div class='bar' style='width:7.37%; background:#2b5d8b'></div></div><div class='bar-value'>2 034 336 Kč</div></div>
+<div class='bar-row'><div class='bar-label'>ZADAVATEL.CZ</div><div class='bar-wrap'><div class='bar' style='width:4.82%; background:#2b5d8b'></div></div><div class='bar-value'>1 330 992 Kč</div></div>
+<div class='bar-row'><div class='bar-label'>CENT</div><div class='bar-wrap'><div class='bar' style='width:2.16%; background:#2b5d8b'></div></div><div class='bar-value'>596 000 Kč</div></div>
+</section>
+
+      <section class='card'><h2>5. SW + rozšířené služby - součet zveřejněných hodnot</h2>
+<div class='bar-row'><div class='bar-label'>E-ZAK</div><div class='bar-wrap'><div class='bar' style='width:100%; background:#6e4b7c'></div></div><div class='bar-value'>47 636 056 Kč</div></div>
+<div class='bar-row'><div class='bar-label'>Tender arena</div><div class='bar-wrap'><div class='bar' style='width:18.51%; background:#6e4b7c'></div></div><div class='bar-value'>8 815 540 Kč</div></div>
+<div class='bar-row'><div class='bar-label'>JOSEPHINE</div><div class='bar-wrap'><div class='bar' style='width:4.24%; background:#6e4b7c'></div></div><div class='bar-value'>2 019 211 Kč</div></div>
+<div class='bar-row'><div class='bar-label'>FirstBuySale</div><div class='bar-wrap'><div class='bar' style='width:1.97%; background:#6e4b7c'></div></div><div class='bar-value'>939 957 Kč</div></div>
+<div class='bar-row'><div class='bar-label'>Eveza</div><div class='bar-wrap'><div class='bar' style='width:0.63%; background:#6e4b7c'></div></div><div class='bar-value'>299 880 Kč</div></div>
+<div class='bar-row'><div class='bar-label'>ZADAVATEL.CZ</div><div class='bar-wrap'><div class='bar' style='width:0%; background:#6e4b7c'></div></div><div class='bar-value'>0 Kč</div></div>
+<div class='bar-row'><div class='bar-label'>CENT</div><div class='bar-wrap'><div class='bar' style='width:0%; background:#6e4b7c'></div></div><div class='bar-value'>0 Kč</div></div>
+</section>
+
+      <section class='card'><h2>6. Konzultace / administrace / právní podpora - součet zveřejněných hodnot</h2>
+<div class='bar-row'><div class='bar-label'>ZADAVATEL.CZ</div><div class='bar-wrap'><div class='bar' style='width:100%; background:#7b4b2a'></div></div><div class='bar-value'>49 378 742 Kč</div></div>
+<div class='bar-row'><div class='bar-label'>Tender arena</div><div class='bar-wrap'><div class='bar' style='width:14.73%; background:#7b4b2a'></div></div><div class='bar-value'>7 274 715 Kč</div></div>
+<div class='bar-row'><div class='bar-label'>E-ZAK</div><div class='bar-wrap'><div class='bar' style='width:9.2%; background:#7b4b2a'></div></div><div class='bar-value'>4 540 465 Kč</div></div>
+<div class='bar-row'><div class='bar-label'>CENT</div><div class='bar-wrap'><div class='bar' style='width:1.87%; background:#7b4b2a'></div></div><div class='bar-value'>921 000 Kč</div></div>
+<div class='bar-row'><div class='bar-label'>Eveza</div><div class='bar-wrap'><div class='bar' style='width:0%; background:#7b4b2a'></div></div><div class='bar-value'>0 Kč</div></div>
+<div class='bar-row'><div class='bar-label'>FirstBuySale</div><div class='bar-wrap'><div class='bar' style='width:0%; background:#7b4b2a'></div></div><div class='bar-value'>0 Kč</div></div>
+<div class='bar-row'><div class='bar-label'>JOSEPHINE</div><div class='bar-wrap'><div class='bar' style='width:0%; background:#7b4b2a'></div></div><div class='bar-value'>0 Kč</div></div>
+</section>
+
+      <section class='card'><h2>7. Smlouvy bez použitelné bez-DPH hodnoty</h2>
+<div class='bar-row'><div class='bar-label'>E-ZAK</div><div class='bar-wrap'><div class='bar' style='width:100%; background:#946f14'></div></div><div class='bar-value'>79</div></div>
+<div class='bar-row'><div class='bar-label'>Tender arena</div><div class='bar-wrap'><div class='bar' style='width:58.23%; background:#946f14'></div></div><div class='bar-value'>46</div></div>
+<div class='bar-row'><div class='bar-label'>ZADAVATEL.CZ</div><div class='bar-wrap'><div class='bar' style='width:55.7%; background:#946f14'></div></div><div class='bar-value'>44</div></div>
+<div class='bar-row'><div class='bar-label'>JOSEPHINE</div><div class='bar-wrap'><div class='bar' style='width:17.72%; background:#946f14'></div></div><div class='bar-value'>14</div></div>
+<div class='bar-row'><div class='bar-label'>FirstBuySale</div><div class='bar-wrap'><div class='bar' style='width:13.92%; background:#946f14'></div></div><div class='bar-value'>11</div></div>
+<div class='bar-row'><div class='bar-label'>CENT</div><div class='bar-wrap'><div class='bar' style='width:13.92%; background:#946f14'></div></div><div class='bar-value'>11</div></div>
+<div class='bar-row'><div class='bar-label'>Eveza</div><div class='bar-wrap'><div class='bar' style='width:0%; background:#946f14'></div></div><div class='bar-value'>0</div></div>
+</section>
+
+      <section class='card'><h2>8. Smlouvy podle roku (top 4 systémy)</h2><div class='table-wrap'><table><thead><tr><th>System</th>
+<th>2016</th>
+<th>2017</th>
+<th>2018</th>
+<th>2019</th>
+<th>2020</th>
+<th>2021</th>
+<th>2022</th>
+<th>2023</th>
+<th>2024</th>
+<th>2025</th>
+<th>2026</th>
+</tr></thead><tbody>
+<tr><td><strong>JOSEPHINE</strong></td>
+<td style='background: rgba(139,61,46,0.08); color: #222; text-align:center;'>0</td>
+<td style='background: rgba(139,61,46,0.08); color: #222; text-align:center;'>0</td>
+<td style='background: rgba(139,61,46,0.08); color: #222; text-align:center;'>0</td>
+<td style='background: rgba(139,61,46,0.08); color: #222; text-align:center;'>0</td>
+<td style='background: rgba(139,61,46,0.1); color: #222; text-align:center;'>1</td>
+<td style='background: rgba(139,61,46,0.17); color: #222; text-align:center;'>6</td>
+<td style='background: rgba(139,61,46,0.19); color: #222; text-align:center;'>7</td>
+<td style='background: rgba(139,61,46,0.17); color: #222; text-align:center;'>6</td>
+<td style='background: rgba(139,61,46,0.22); color: #222; text-align:center;'>9</td>
+<td style='background: rgba(139,61,46,0.19); color: #222; text-align:center;'>7</td>
+<td style='background: rgba(139,61,46,0.14); color: #222; text-align:center;'>4</td>
+</tr>
+<tr><td><strong>E-ZAK</strong></td>
+<td style='background: rgba(139,61,46,0.2); color: #222; text-align:center;'>8</td>
+<td style='background: rgba(139,61,46,0.57); color: #fff; text-align:center;'>32</td>
+<td style='background: rgba(139,61,46,0.84); color: #fff; text-align:center;'>50</td>
+<td style='background: rgba(139,61,46,0.96); color: #fff; text-align:center;'>58</td>
+<td style='background: rgba(139,61,46,0.9); color: #fff; text-align:center;'>54</td>
+<td style='background: rgba(139,61,46,0.5); color: #fff; text-align:center;'>28</td>
+<td style='background: rgba(139,61,46,0.49); color: #fff; text-align:center;'>27</td>
+<td style='background: rgba(139,61,46,0.52); color: #fff; text-align:center;'>29</td>
+<td style='background: rgba(139,61,46,0.87); color: #fff; text-align:center;'>52</td>
+<td style='background: rgba(139,61,46,0.84); color: #fff; text-align:center;'>50</td>
+<td style='background: rgba(139,61,46,0.26); color: #222; text-align:center;'>12</td>
+</tr>
+<tr><td><strong>Tender arena</strong></td>
+<td style='background: rgba(139,61,46,0.1); color: #222; text-align:center;'>1</td>
+<td style='background: rgba(139,61,46,0.26); color: #222; text-align:center;'>12</td>
+<td style='background: rgba(139,61,46,0.46); color: #fff; text-align:center;'>25</td>
+<td style='background: rgba(139,61,46,0.28); color: #222; text-align:center;'>13</td>
+<td style='background: rgba(139,61,46,0.2); color: #222; text-align:center;'>8</td>
+<td style='background: rgba(139,61,46,0.31); color: #222; text-align:center;'>15</td>
+<td style='background: rgba(139,61,46,0.41); color: #222; text-align:center;'>22</td>
+<td style='background: rgba(139,61,46,0.41); color: #222; text-align:center;'>22</td>
+<td style='background: rgba(139,61,46,0.61); color: #fff; text-align:center;'>35</td>
+<td style='background: rgba(139,61,46,0.46); color: #fff; text-align:center;'>25</td>
+<td style='background: rgba(139,61,46,0.22); color: #222; text-align:center;'>9</td>
+</tr>
+<tr><td><strong>ZADAVATEL.CZ</strong></td>
+<td style='background: rgba(139,61,46,0.31); color: #222; text-align:center;'>15</td>
+<td style='background: rgba(139,61,46,0.54); color: #fff; text-align:center;'>30</td>
+<td style='background: rgba(139,61,46,0.66); color: #fff; text-align:center;'>38</td>
+<td style='background: rgba(139,61,46,0.66); color: #fff; text-align:center;'>38</td>
+<td style='background: rgba(139,61,46,0.43); color: #222; text-align:center;'>23</td>
+<td style='background: rgba(139,61,46,0.34); color: #222; text-align:center;'>17</td>
+<td style='background: rgba(139,61,46,0.49); color: #fff; text-align:center;'>27</td>
+<td style='background: rgba(139,61,46,0.4); color: #222; text-align:center;'>21</td>
+<td style='background: rgba(139,61,46,0.5); color: #fff; text-align:center;'>28</td>
+<td style='background: rgba(139,61,46,0.22); color: #222; text-align:center;'>9</td>
+<td style='background: rgba(139,61,46,0.11); color: #222; text-align:center;'>2</td>
+</tr>
+</tbody></table></div></section>
+
+    </div>
+
+    <section class='card'><h2>Rozpad podle typu kontraktu - všichni konkurenti</h2><div class='system-grid'>
+<article class='mini-card'><h3>E-ZAK</h3><div class='table-wrap'><table class='fixed compact-table mini-breakdown'><thead><tr><th>Typ</th><th>Smluv</th><th>Zveř.</th><th>Součet</th></tr></thead><tbody>
+<tr>
+<td>Př&#237;m&#233; poskytov&#225;n&#237; SW</td>
+<td>137</td>
+<td>114</td>
+<td>19&#160;539&#160;669 Kč</td>
+</tr>
+<tr>
+<td>SW + rozš&#237;řen&#233; služby</td>
+<td>196</td>
+<td>144</td>
+<td>47&#160;636&#160;056 Kč</td>
+</tr>
+<tr>
+<td>Konzultace / administrace / pr&#225;vn&#237; podpora</td>
+<td>47</td>
+<td>45</td>
+<td>4&#160;540&#160;465 Kč</td>
+</tr>
+<tr>
+<td>Nejasn&#233;</td>
+<td>20</td>
+<td>18</td>
+<td>3&#160;293&#160;064 Kč</td>
+</tr>
+</tbody></table></div></article>
+<article class='mini-card'><h3>ZADAVATEL.CZ</h3><div class='table-wrap'><table class='fixed compact-table mini-breakdown'><thead><tr><th>Typ</th><th>Smluv</th><th>Zveř.</th><th>Součet</th></tr></thead><tbody>
+<tr>
+<td>Př&#237;m&#233; poskytov&#225;n&#237; SW</td>
+<td>14</td>
+<td>13</td>
+<td>1&#160;330&#160;992 Kč</td>
+</tr>
+<tr>
+<td>SW + rozš&#237;řen&#233; služby</td>
+<td>0</td>
+<td>0</td>
+<td>0 Kč</td>
+</tr>
+<tr>
+<td>Konzultace / administrace / pr&#225;vn&#237; podpora</td>
+<td>178</td>
+<td>152</td>
+<td>49&#160;378&#160;742 Kč</td>
+</tr>
+<tr>
+<td>Nejasn&#233;</td>
+<td>56</td>
+<td>39</td>
+<td>13&#160;505&#160;189 Kč</td>
+</tr>
+</tbody></table></div></article>
+<article class='mini-card'><h3>Tender arena</h3><div class='table-wrap'><table class='fixed compact-table mini-breakdown'><thead><tr><th>Typ</th><th>Smluv</th><th>Zveř.</th><th>Součet</th></tr></thead><tbody>
+<tr>
+<td>Př&#237;m&#233; poskytov&#225;n&#237; SW</td>
+<td>93</td>
+<td>68</td>
+<td>27&#160;604&#160;739 Kč</td>
+</tr>
+<tr>
+<td>SW + rozš&#237;řen&#233; služby</td>
+<td>23</td>
+<td>21</td>
+<td>8&#160;815&#160;540 Kč</td>
+</tr>
+<tr>
+<td>Konzultace / administrace / pr&#225;vn&#237; podpora</td>
+<td>26</td>
+<td>23</td>
+<td>7&#160;274&#160;715 Kč</td>
+</tr>
+<tr>
+<td>Nejasn&#233;</td>
+<td>45</td>
+<td>29</td>
+<td>11&#160;011&#160;626 Kč</td>
+</tr>
+</tbody></table></div></article>
+<article class='mini-card'><h3>JOSEPHINE</h3><div class='table-wrap'><table class='fixed compact-table mini-breakdown'><thead><tr><th>Typ</th><th>Smluv</th><th>Zveř.</th><th>Součet</th></tr></thead><tbody>
+<tr>
+<td>Př&#237;m&#233; poskytov&#225;n&#237; SW</td>
+<td>15</td>
+<td>10</td>
+<td>2&#160;034&#160;336 Kč</td>
+</tr>
+<tr>
+<td>SW + rozš&#237;řen&#233; služby</td>
+<td>25</td>
+<td>16</td>
+<td>2&#160;019&#160;211 Kč</td>
+</tr>
+<tr>
+<td>Konzultace / administrace / pr&#225;vn&#237; podpora</td>
+<td>0</td>
+<td>0</td>
+<td>0 Kč</td>
+</tr>
+<tr>
+<td>Nejasn&#233;</td>
+<td>0</td>
+<td>0</td>
+<td>0 Kč</td>
+</tr>
+</tbody></table></div></article>
+<article class='mini-card'><h3>CENT</h3><div class='table-wrap'><table class='fixed compact-table mini-breakdown'><thead><tr><th>Typ</th><th>Smluv</th><th>Zveř.</th><th>Součet</th></tr></thead><tbody>
+<tr>
+<td>Př&#237;m&#233; poskytov&#225;n&#237; SW</td>
+<td>6</td>
+<td>5</td>
+<td>596&#160;000 Kč</td>
+</tr>
+<tr>
+<td>SW + rozš&#237;řen&#233; služby</td>
+<td>0</td>
+<td>0</td>
+<td>0 Kč</td>
+</tr>
+<tr>
+<td>Konzultace / administrace / pr&#225;vn&#237; podpora</td>
+<td>20</td>
+<td>12</td>
+<td>921&#160;000 Kč</td>
+</tr>
+<tr>
+<td>Nejasn&#233;</td>
+<td>7</td>
+<td>5</td>
+<td>541&#160;000 Kč</td>
+</tr>
+</tbody></table></div></article>
+<article class='mini-card'><h3>FirstBuySale</h3><div class='table-wrap'><table class='fixed compact-table mini-breakdown'><thead><tr><th>Typ</th><th>Smluv</th><th>Zveř.</th><th>Součet</th></tr></thead><tbody>
+<tr>
+<td>Př&#237;m&#233; poskytov&#225;n&#237; SW</td>
+<td>13</td>
+<td>8</td>
+<td>6&#160;167&#160;200 Kč</td>
+</tr>
+<tr>
+<td>SW + rozš&#237;řen&#233; služby</td>
+<td>1</td>
+<td>1</td>
+<td>939&#160;957 Kč</td>
+</tr>
+<tr>
+<td>Konzultace / administrace / pr&#225;vn&#237; podpora</td>
+<td>0</td>
+<td>0</td>
+<td>0 Kč</td>
+</tr>
+<tr>
+<td>Nejasn&#233;</td>
+<td>18</td>
+<td>12</td>
+<td>13&#160;083&#160;298 Kč</td>
+</tr>
+</tbody></table></div></article>
+<article class='mini-card'><h3>Eveza</h3><div class='table-wrap'><table class='fixed compact-table mini-breakdown'><thead><tr><th>Typ</th><th>Smluv</th><th>Zveř.</th><th>Součet</th></tr></thead><tbody>
+<tr>
+<td>Př&#237;m&#233; poskytov&#225;n&#237; SW</td>
+<td>2</td>
+<td>2</td>
+<td>2&#160;044&#160;575 Kč</td>
+</tr>
+<tr>
+<td>SW + rozš&#237;řen&#233; služby</td>
+<td>1</td>
+<td>1</td>
+<td>299&#160;880 Kč</td>
+</tr>
+<tr>
+<td>Konzultace / administrace / pr&#225;vn&#237; podpora</td>
+<td>0</td>
+<td>0</td>
+<td>0 Kč</td>
+</tr>
+<tr>
+<td>Nejasn&#233;</td>
+<td>4</td>
+<td>4</td>
+<td>840&#160;164 Kč</td>
+</tr>
+</tbody></table></div></article>
+</div></section>
+
+
+    <section class='card'><h2>JOSEPHINE - rozpad podle typu kontraktu</h2><div class='table-wrap'><table class='fixed compact-table'><thead><tr><th>Typ kontraktu</th><th>Smluv</th><th>Zveřejněných hodnot bez DPH</th><th>Součet bez DPH</th><th>Interpretace</th></tr></thead><tbody>
+<tr>
+<td><span class='pill'>Př&#237;m&#233; poskytov&#225;n&#237; SW</span></td>
+<td>15</td>
+<td>10</td>
+<td>2&#160;034&#160;336 Kč</td>
+<td>Licence, pron&#225;jem, př&#237;stup nebo samotn&#233; poskytnut&#237; elektronick&#233;ho n&#225;stroje bez širš&#237; poradensk&#233; složky.</td>
+</tr>
+<tr>
+<td><span class='pill'>SW + rozš&#237;řen&#233; služby</span></td>
+<td>25</td>
+<td>16</td>
+<td>2&#160;019&#160;211 Kč</td>
+<td>SW doplněn&#253; o servis, podporu, školen&#237;, implementaci, rozvoj nebo jin&#233; provozn&#237; služby.</td>
+</tr>
+<tr>
+<td><span class='pill'>Konzultace / administrace / pr&#225;vn&#237; podpora</span></td>
+<td>0</td>
+<td>0</td>
+<td>0 Kč</td>
+<td>Poradensk&#233;, zadavatelsk&#233;, pr&#225;vn&#237; nebo administrativn&#237; plněn&#237;; nevykl&#225;dat jako př&#237;m&#233; SW revenue.</td>
+</tr>
+<tr>
+<td><span class='pill'>Nejasn&#233;</span></td>
+<td>0</td>
+<td>0</td>
+<td>0 Kč</td>
+<td>Z n&#225;zvu ani stručn&#233;ho popisu nelze bezpečně určit, zda převažuje n&#225;stroj nebo širš&#237; služba.</td>
+</tr>
+</tbody></table></div></section>
+
+
+    <section class='card'><h2>Smlouvy s rozšířenými službami</h2><div class='table-wrap'><table class='fixed compact-table contracts-table'><thead><tr><th>Systém</th><th>Typ plnění</th><th>Zadavatel</th><th>Popis smlouvy</th><th>Datum</th><th>Hodnota bez DPH</th></tr></thead><tbody>
+<tr>
+<td>E-ZAK</td>
+<td><span class='pill'>SW + rozš&#237;řen&#233; služby</span><div class='small note'>SW doplněn&#253; o servis, podporu, školen&#237;, implementaci, rozvoj nebo jin&#233; provozn&#237; služby.</div></td>
+<td>Spr&#225;va železnic, st&#225;tn&#237; organizace</td>
+<td>R&#225;mcov&#225; dohoda o d&#237;lo na rozvoj software, jej&#237;mž předmětem je realizace rozvojov&#253;ch požadavků a požadavků na n&#225;kup nov&#253;ch modulů a funkcionalit, k již existuj&#237;c&#237;mu řešen&#237; „E-ZAK“<div class='small note'><a href='https://smlouvy.gov.cz/smlouva/31445904?backlink=cg04p'>detail smlouvy</a></div></td>
+<td>2024-12-16</td>
+<td>7 984 000 Kč</td>
+</tr>
+<tr>
+<td>E-ZAK</td>
+<td><span class='pill'>SW + rozš&#237;řen&#233; služby</span><div class='small note'>SW doplněn&#253; o servis, podporu, školen&#237;, implementaci, rozvoj nebo jin&#233; provozn&#237; služby.</div></td>
+<td>Spr&#225;va železnic, st&#225;tn&#237; organizace</td>
+<td>Smlouva o &#250;držbě a provozu software, jej&#237;mž předmětem je &#250;držba a podpora provozu aplikace E-ZAK<div class='small note'><a href='https://smlouvy.gov.cz/smlouva/31444524?backlink=cg04p'>detail smlouvy</a></div></td>
+<td>2024-12-16</td>
+<td>2 016 000 Kč</td>
+</tr>
+<tr>
+<td>E-ZAK</td>
+<td><span class='pill'>SW + rozš&#237;řen&#233; služby</span><div class='small note'>SW doplněn&#253; o servis, podporu, školen&#237;, implementaci, rozvoj nebo jin&#233; provozn&#237; služby.</div></td>
+<td>Spr&#225;va železnic, st&#225;tn&#237; organizace</td>
+<td>Smlouva o poskytov&#225;n&#237; služeb „Podpora provozu a &#250;držba aplikace 85079 E-ZAK&quot;<div class='small note'><a href='https://smlouvy.gov.cz/smlouva/11888808?backlink=ir2o9'>detail smlouvy</a></div></td>
+<td>2020-03-06</td>
+<td>1 998 000 Kč</td>
+</tr>
+<tr>
+<td>Tender arena</td>
+<td><span class='pill'>SW + rozš&#237;řen&#233; služby</span><div class='small note'>SW doplněn&#253; o servis, podporu, školen&#237;, implementaci, rozvoj nebo jin&#233; provozn&#237; služby.</div></td>
+<td>Hlavn&#237; město Praha</td>
+<td>inomin&#225;tn&#237; smlouva, nen&#237;-li v tomto seznamu zvl&#225;štn&#237; k&#243;d &#167; 1746 odst. 2 NOZ: Provozov&#225;n&#237; programov&#233;ho vybaven&#237; pro evidenci a zad&#225;v&#225;n&#237; veřejn&#253;ch zak&#225;zek a poskytov&#225;n&#237; služeb rozš&#237;řen&#233; podpory – profilu zadavatele Tender Arena a elektronick&#233;ho tržiště T...<div class='small note'><a href='https://smlouvy.gov.cz/smlouva/7003923?backlink=7yfso'>detail smlouvy</a></div></td>
+<td>2018-10-16</td>
+<td>1 936 000 Kč</td>
+</tr>
+<tr>
+<td>Tender arena</td>
+<td><span class='pill'>SW + rozš&#237;řen&#233; služby</span><div class='small note'>SW doplněn&#253; o servis, podporu, školen&#237;, implementaci, rozvoj nebo jin&#233; provozn&#237; služby.</div></td>
+<td>&#218;steck&#253; kraj</td>
+<td>Smlouva o poskytov&#225;n&#237; služeb &quot;Rozš&#237;řen&#237; elektronick&#233;ho n&#225;stroje pro zad&#225;v&#225;n&#237; veřejn&#253;ch zak&#225;zek&quot;<div class='small note'><a href='https://smlouvy.gov.cz/smlouva/6052215?backlink=mja3f'>detail smlouvy</a></div></td>
+<td>2018-07-02</td>
+<td>1 698 000 Kč</td>
+</tr>
+<tr>
+<td>Tender arena</td>
+<td><span class='pill'>SW + rozš&#237;řen&#233; služby</span><div class='small note'>SW doplněn&#253; o servis, podporu, školen&#237;, implementaci, rozvoj nebo jin&#233; provozn&#237; služby.</div></td>
+<td>&#218;steck&#253; kraj</td>
+<td>Dodatek č. 1 ke smlouvě &quot;Rozš&#237;řen&#237; elektronick&#233;ho n&#225;stroje pro zad&#225;v&#225;n&#237; veřejn&#253;ch zak&#225;zek&quot;<div class='small note'><a href='https://smlouvy.gov.cz/smlouva/28024939?backlink=8hj2j'>detail smlouvy</a></div></td>
+<td>2024-03-19</td>
+<td>1 682 000 Kč</td>
+</tr>
+<tr>
+<td>E-ZAK</td>
+<td><span class='pill'>SW + rozš&#237;řen&#233; služby</span><div class='small note'>SW doplněn&#253; o servis, podporu, školen&#237;, implementaci, rozvoj nebo jin&#233; provozn&#237; služby.</div></td>
+<td>Centr&#225;ln&#237; n&#225;kup, př&#237;spěvkov&#225; organizace</td>
+<td>Smlouva o poskytov&#225;n&#237; technick&#233; podpory, servisn&#237; podpory a rozvoje aplikace E-ZAK<div class='small note'><a href='https://smlouvy.gov.cz/smlouva/9703111?backlink=yeifx'>detail smlouvy</a></div></td>
+<td>2019-07-24</td>
+<td>1 634 988 Kč</td>
+</tr>
+<tr>
+<td>E-ZAK</td>
+<td><span class='pill'>SW + rozš&#237;řen&#233; služby</span><div class='small note'>SW doplněn&#253; o servis, podporu, školen&#237;, implementaci, rozvoj nebo jin&#233; provozn&#237; služby.</div></td>
+<td>Středočesk&#253; kraj</td>
+<td>Smlouva o d&#237;lo - Rozš&#237;řen&#237; st&#225;vaj&#237;c&#237;ho certifikovan&#233;ho elektronick&#233;ho n&#225;stroje E-ZAK<div class='small note'><a href='https://smlouvy.gov.cz/smlouva/12056256?backlink=ir2o9'>detail smlouvy</a></div></td>
+<td>2020-03-26</td>
+<td>1 519 000 Kč</td>
+</tr>
+<tr>
+<td>E-ZAK</td>
+<td><span class='pill'>SW + rozš&#237;řen&#233; služby</span><div class='small note'>SW doplněn&#253; o servis, podporu, školen&#237;, implementaci, rozvoj nebo jin&#233; provozn&#237; služby.</div></td>
+<td>Středočesk&#253; kraj</td>
+<td>Smlouva o poskytov&#225;n&#237; servisn&#237;ch služeb - Implementace certifikovan&#233;ho elektronick&#233;ho n&#225;stroje E-ZAK<div class='small note'><a href='https://smlouvy.gov.cz/smlouva/226093?backlink=4cjy4'>detail smlouvy</a></div></td>
+<td>2016-09-13</td>
+<td>1 510 000 Kč</td>
+</tr>
+<tr>
+<td>E-ZAK</td>
+<td><span class='pill'>SW + rozš&#237;řen&#233; služby</span><div class='small note'>SW doplněn&#253; o servis, podporu, školen&#237;, implementaci, rozvoj nebo jin&#233; provozn&#237; služby.</div></td>
+<td>Česk&#225; republika - Ministerstvo životn&#237;ho prostřed&#237;</td>
+<td>Poskytov&#225;n&#237; servisn&#237;ch služeb k resortn&#237;m elektronick&#253;m n&#225;strojům pro zad&#225;v&#225;n&#237; veřejn&#253;ch zak&#225;zek<div class='small note'><a href='https://smlouvy.gov.cz/smlouva/6301119?backlink=3wpnd'>detail smlouvy</a></div></td>
+<td>2018-07-31</td>
+<td>1 165 289 Kč</td>
+</tr>
+<tr>
+<td>E-ZAK</td>
+<td><span class='pill'>SW + rozš&#237;řen&#233; služby</span><div class='small note'>SW doplněn&#253; o servis, podporu, školen&#237;, implementaci, rozvoj nebo jin&#233; provozn&#237; služby.</div></td>
+<td>Fakultn&#237; nemocnice Brno</td>
+<td>Spr&#225;va elektronick&#233;ho n&#225;stroje E-ZAK - dodatek č.4<div class='small note'><a href='https://smlouvy.gov.cz/smlouva/32853016?backlink=05lji'>detail smlouvy</a></div></td>
+<td>2025-04-09</td>
+<td>1 131 320 Kč</td>
+</tr>
+<tr>
+<td>E-ZAK</td>
+<td><span class='pill'>SW + rozš&#237;řen&#233; služby</span><div class='small note'>SW doplněn&#253; o servis, podporu, školen&#237;, implementaci, rozvoj nebo jin&#233; provozn&#237; služby.</div></td>
+<td>Fakultn&#237; nemocnice Brno</td>
+<td>Spr&#225;va elektronick&#233;ho n&#225;stroje E-ZAK - dodatek č.4 aktualizace odměny o inflaci<div class='small note'><a href='https://smlouvy.gov.cz/smlouva/32257196?backlink=05lji'>detail smlouvy</a></div></td>
+<td>2025-02-24</td>
+<td>1 087 320 Kč</td>
+</tr>
+<tr>
+<td>E-ZAK</td>
+<td><span class='pill'>SW + rozš&#237;řen&#233; služby</span><div class='small note'>SW doplněn&#253; o servis, podporu, školen&#237;, implementaci, rozvoj nebo jin&#233; provozn&#237; služby.</div></td>
+<td>Středočesk&#253; kraj</td>
+<td>Dodatek č. 2 ke smlouvě o poskytnut&#237; servisn&#237;ch služeb - EZAK<div class='small note'><a href='https://smlouvy.gov.cz/smlouva/12060632?backlink=sxjs3'>detail smlouvy</a></div></td>
+<td>2020-03-27</td>
+<td>964 052 Kč</td>
+</tr>
+<tr>
+<td>E-ZAK</td>
+<td><span class='pill'>SW + rozš&#237;řen&#233; služby</span><div class='small note'>SW doplněn&#253; o servis, podporu, školen&#237;, implementaci, rozvoj nebo jin&#233; provozn&#237; služby.</div></td>
+<td>Středočesk&#253; kraj</td>
+<td>Dodatek č. 1 ke Smlouvě o poskytnut&#237; servisn&#237;ch služeb - EZAK k EVZ 17190032<div class='small note'><a href='https://smlouvy.gov.cz/smlouva/9479171?backlink=6stdu'>detail smlouvy</a></div></td>
+<td>2019-06-28</td>
+<td>944 163 Kč</td>
+</tr>
+<tr>
+<td>FirstBuySale</td>
+<td><span class='pill'>SW + rozš&#237;řen&#233; služby</span><div class='small note'>SW doplněn&#253; o servis, podporu, školen&#237;, implementaci, rozvoj nebo jin&#233; provozn&#237; služby.</div></td>
+<td>Univerzita Tom&#225;še Bati ve Zl&#237;ně</td>
+<td>Smlouva o d&#237;lo - Rozš&#237;řen&#237; SW Kredit o objedn&#225;vkov&#253; modul včetně př&#237;slušenstv&#237;<div class='small note'><a href='https://smlouvy.gov.cz/smlouva/26361979?backlink=t05dk'>detail smlouvy</a></div></td>
+<td>2023-11-06</td>
+<td>939 957 Kč</td>
+</tr>
+<tr>
+<td>E-ZAK</td>
+<td><span class='pill'>SW + rozš&#237;řen&#233; služby</span><div class='small note'>SW doplněn&#253; o servis, podporu, školen&#237;, implementaci, rozvoj nebo jin&#233; provozn&#237; služby.</div></td>
+<td>Česk&#225; republika - Ministerstvo životn&#237;ho prostřed&#237;</td>
+<td>Poskytov&#225;n&#237; servisn&#237;ch služeb k resortn&#237;m elektronick&#253;m n&#225;strojům pro zad&#225;v&#225;n&#237; veřejn&#253;ch zak&#225;zek<div class='small note'><a href='https://smlouvy.gov.cz/smlouva/13021676?backlink=sxjs3'>detail smlouvy</a></div></td>
+<td>2020-06-18</td>
+<td>904 001 Kč</td>
+</tr>
+<tr>
+<td>Tender arena</td>
+<td><span class='pill'>SW + rozš&#237;řen&#233; služby</span><div class='small note'>SW doplněn&#253; o servis, podporu, školen&#237;, implementaci, rozvoj nebo jin&#233; provozn&#237; služby.</div></td>
+<td>Spr&#225;va informačn&#237;ch technologi&#237; města Plzně</td>
+<td>Smlouva o poskytnut&#237; licence a služeb Data GORDION, dodatek č&#237;slo dodatek č. 5<div class='small note'><a href='https://smlouvy.gov.cz/smlouva/27677895?backlink=ukb4x'>detail smlouvy</a></div></td>
+<td>2024-02-19</td>
+<td>858 000 Kč</td>
+</tr>
+<tr>
+<td>E-ZAK</td>
+<td><span class='pill'>SW + rozš&#237;řen&#233; služby</span><div class='small note'>SW doplněn&#253; o servis, podporu, školen&#237;, implementaci, rozvoj nebo jin&#233; provozn&#237; služby.</div></td>
+<td>Česk&#225; republika - Ministerstvo životn&#237;ho prostřed&#237;</td>
+<td>Poskytov&#225;n&#237; servisn&#237;ch služeb k resortn&#237;m elektronick&#253;m n&#225;strojům pro zad&#225;v&#225;n&#237; veřejn&#253;ch zak&#225;zek<div class='small note'><a href='https://smlouvy.gov.cz/smlouva/22188661?backlink=t9wlz'>detail smlouvy</a></div></td>
+<td>2022-11-01</td>
+<td>800 000 Kč</td>
+</tr>
+<tr>
+<td>E-ZAK</td>
+<td><span class='pill'>SW + rozš&#237;řen&#233; služby</span><div class='small note'>SW doplněn&#253; o servis, podporu, školen&#237;, implementaci, rozvoj nebo jin&#233; provozn&#237; služby.</div></td>
+<td>ČEPRO, a.s.</td>
+<td>Dodatel č. 3 ke smlouvě o poskytov&#225;n&#237; servisn&#237;ch služeb - e-Zak<div class='small note'><a href='https://smlouvy.gov.cz/smlouva/11140964?backlink=zyly7'>detail smlouvy</a></div></td>
+<td>2019-12-18</td>
+<td>750 000 Kč</td>
+</tr>
+<tr>
+<td>E-ZAK</td>
+<td><span class='pill'>SW + rozš&#237;řen&#233; služby</span><div class='small note'>SW doplněn&#253; o servis, podporu, školen&#237;, implementaci, rozvoj nebo jin&#233; provozn&#237; služby.</div></td>
+<td>ČEPRO, a.s.</td>
+<td>Dodatel č. 4 ke smlouvě o poskytov&#225;n&#237; servisn&#237;ch služeb - e-Zak<div class='small note'><a href='https://smlouvy.gov.cz/smlouva/36300765?backlink=cyw0c'>detail smlouvy</a></div></td>
+<td>2026-01-07</td>
+<td>750 000 Kč</td>
+</tr>
+</tbody></table></div></section>
+
+
+    <section class='card'><h2>Seznam 1 - pouze pronájem / licence / přímé SW</h2><div class='table-wrap'><table class='fixed compact-table contracts-table'><thead><tr><th>Systém</th><th>Typ plnění</th><th>Zadavatel</th><th>Popis smlouvy</th><th>Datum</th><th>Hodnota bez DPH</th></tr></thead><tbody>
+<tr>
+<td>E-ZAK</td>
+<td><span class='pill'>Př&#237;m&#233; poskytov&#225;n&#237; SW</span><div class='small note'>Licence, pron&#225;jem, př&#237;stup nebo samotn&#233; poskytnut&#237; elektronick&#233;ho n&#225;stroje bez širš&#237; poradensk&#233; složky.</div></td>
+<td>Středočesk&#253; kraj</td>
+<td>Dodatek č. 3 - EZAK k EVZ 17190032<div class='small note'><a href='https://smlouvy.gov.cz/smlouva/15142255?backlink=t59hh'>detail smlouvy</a></div></td>
+<td>2021-01-11</td>
+<td>2 760 000 Kč</td>
+</tr>
+<tr>
+<td>FirstBuySale</td>
+<td><span class='pill'>Př&#237;m&#233; poskytov&#225;n&#237; SW</span><div class='small note'>Licence, pron&#225;jem, př&#237;stup nebo samotn&#233; poskytnut&#237; elektronick&#233;ho n&#225;stroje bez širš&#237; poradensk&#233; složky.</div></td>
+<td>Fakultn&#237; nemocnice u sv. Anny v Brně</td>
+<td>R&#225;mcov&#225; smlouva o poskytov&#225;n&#237; služeb port&#225;lu FirstBuySale<div class='small note'><a href='https://smlouvy.gov.cz/smlouva/12001024?backlink=ina13'>detail smlouvy</a></div></td>
+<td>2020-03-19</td>
+<td>1 999 800 Kč</td>
+</tr>
+<tr>
+<td>Eveza</td>
+<td><span class='pill'>Př&#237;m&#233; poskytov&#225;n&#237; SW</span><div class='small note'>Licence, pron&#225;jem, př&#237;stup nebo samotn&#233; poskytnut&#237; elektronick&#233;ho n&#225;stroje bez širš&#237; poradensk&#233; složky.</div></td>
+<td>Lesy Česk&#233; republiky, s.p.</td>
+<td>Informačn&#237; a komunikačn&#237; technologie; Služby v oblasti ICT (pouze pro Ř LČR); Poskytov&#225;n&#237; služeb - SW n&#225;stroj pro elektronickou komunikaci v zad&#225;vac&#237;ch ř&#237;zen&#237;ch<div class='small note'><a href='https://smlouvy.gov.cz/smlouva/29743916?backlink=4hx16'>detail smlouvy</a></div></td>
+<td>2024-08-08</td>
+<td>1 960 200 Kč</td>
+</tr>
+<tr>
+<td>Tender arena</td>
+<td><span class='pill'>Př&#237;m&#233; poskytov&#225;n&#237; SW</span><div class='small note'>Licence, pron&#225;jem, př&#237;stup nebo samotn&#233; poskytnut&#237; elektronick&#233;ho n&#225;stroje bez širš&#237; poradensk&#233; složky.</div></td>
+<td>Česk&#253; &#250;řad zeměměřick&#253; a katastr&#225;ln&#237;</td>
+<td>licenčn&#237; – poskytnut&#237; komplexn&#237;ho a plně funkčn&#237;ho elektronick&#233;ho n&#225;stroje pro zad&#225;v&#225;n&#237; veřejn&#253;ch zak&#225;zek<div class='small note'><a href='https://smlouvy.gov.cz/smlouva/22674645?backlink=2yqom'>detail smlouvy</a></div></td>
+<td>2022-12-09</td>
+<td>1 900 000 Kč</td>
+</tr>
+<tr>
+<td>Tender arena</td>
+<td><span class='pill'>Př&#237;m&#233; poskytov&#225;n&#237; SW</span><div class='small note'>Licence, pron&#225;jem, př&#237;stup nebo samotn&#233; poskytnut&#237; elektronick&#233;ho n&#225;stroje bez širš&#237; poradensk&#233; složky.</div></td>
+<td>Česk&#253; &#250;řad zeměměřick&#253; a katastr&#225;ln&#237;</td>
+<td>licenčn&#237; – zajištěn&#237; provozu e-tržiště<div class='small note'><a href='https://smlouvy.gov.cz/smlouva/22674657?backlink=2yqom'>detail smlouvy</a></div></td>
+<td>2022-12-09</td>
+<td>1 900 000 Kč</td>
+</tr>
+<tr>
+<td>Tender arena</td>
+<td><span class='pill'>Př&#237;m&#233; poskytov&#225;n&#237; SW</span><div class='small note'>Licence, pron&#225;jem, př&#237;stup nebo samotn&#233; poskytnut&#237; elektronick&#233;ho n&#225;stroje bez širš&#237; poradensk&#233; složky.</div></td>
+<td>Městsk&#225; č&#225;st Praha 1</td>
+<td>Dodatek č. 1 ke Smlouvě o poskytov&#225;n&#237; služeb provozov&#225;n&#237; elektronick&#233;ho n&#225;stroje pro zad&#225;v&#225;n&#237; veřejn&#253;ch zak&#225;zek Tender arena&#174; ze dne 7. 10. 2024, dodatek č&#237;slo 2024/0914/D1<div class='small note'><a href='https://smlouvy.gov.cz/smlouva/36132033?backlink=0jroa'>detail smlouvy</a></div></td>
+<td>2025-12-18</td>
+<td>1 789 237 Kč</td>
+</tr>
+<tr>
+<td>Tender arena</td>
+<td><span class='pill'>Př&#237;m&#233; poskytov&#225;n&#237; SW</span><div class='small note'>Licence, pron&#225;jem, př&#237;stup nebo samotn&#233; poskytnut&#237; elektronick&#233;ho n&#225;stroje bez širš&#237; poradensk&#233; složky.</div></td>
+<td>Statut&#225;rn&#237; město Kladno</td>
+<td>Smlouva o poskytov&#225;n&#237; služeb provozov&#225;n&#237; elektronick&#233;ho n&#225;stroje pro zad&#225;v&#225;n&#237; veřejn&#253;ch zak&#225;zek Tender arena, dodatek č&#237;slo 1<div class='small note'><a href='https://smlouvy.gov.cz/smlouva/21868917?backlink=2yqom'>detail smlouvy</a></div></td>
+<td>2022-10-04</td>
+<td>1 500 000 Kč</td>
+</tr>
+<tr>
+<td>Tender arena</td>
+<td><span class='pill'>Př&#237;m&#233; poskytov&#225;n&#237; SW</span><div class='small note'>Licence, pron&#225;jem, př&#237;stup nebo samotn&#233; poskytnut&#237; elektronick&#233;ho n&#225;stroje bez širš&#237; poradensk&#233; složky.</div></td>
+<td>Statut&#225;rn&#237; město Kladno</td>
+<td>Smlouva o poskytov&#225;n&#237; služeb provozov&#225;n&#237; elektronick&#233;ho n&#225;stroje pro zad&#225;v&#225;n&#237; veřejn&#253;ch zak&#225;zek<div class='small note'><a href='https://smlouvy.gov.cz/smlouva/5844535?backlink=mja3f'>detail smlouvy</a></div></td>
+<td>2018-06-13</td>
+<td>1 499 000 Kč</td>
+</tr>
+<tr>
+<td>Tender arena</td>
+<td><span class='pill'>Př&#237;m&#233; poskytov&#225;n&#237; SW</span><div class='small note'>Licence, pron&#225;jem, př&#237;stup nebo samotn&#233; poskytnut&#237; elektronick&#233;ho n&#225;stroje bez širš&#237; poradensk&#233; složky.</div></td>
+<td>Technologie hlavn&#237;ho města Prahy, a.s.</td>
+<td>Smlouva o poskytov&#225;n&#237; služeb provozov&#225;n&#237; elektronick&#233;ho n&#225;stroje pro zad&#225;v&#225;n&#237; veřejn&#253;ch zak&#225;zek Tender arena<div class='small note'><a href='https://smlouvy.gov.cz/smlouva/24526019?backlink=05ih4'>detail smlouvy</a></div></td>
+<td>2023-05-23</td>
+<td>1 365 600 Kč</td>
+</tr>
+<tr>
+<td>FirstBuySale</td>
+<td><span class='pill'>Př&#237;m&#233; poskytov&#225;n&#237; SW</span><div class='small note'>Licence, pron&#225;jem, př&#237;stup nebo samotn&#233; poskytnut&#237; elektronick&#233;ho n&#225;stroje bez širš&#237; poradensk&#233; složky.</div></td>
+<td>Nemocnice Kyjov, př&#237;spěvkov&#225; organizace</td>
+<td>R&#225;mcov&#225; smlouva o poskytov&#225;n&#237; služeb port&#225;lu FirstBuySale<div class='small note'><a href='https://smlouvy.gov.cz/smlouva/13129232?backlink=nnd6h'>detail smlouvy</a></div></td>
+<td>2020-06-30</td>
+<td>1 350 000 Kč</td>
+</tr>
+<tr>
+<td>FirstBuySale</td>
+<td><span class='pill'>Př&#237;m&#233; poskytov&#225;n&#237; SW</span><div class='small note'>Licence, pron&#225;jem, př&#237;stup nebo samotn&#233; poskytnut&#237; elektronick&#233;ho n&#225;stroje bez širš&#237; poradensk&#233; složky.</div></td>
+<td>Statut&#225;rn&#237; město Brno</td>
+<td>R&#225;mcov&#225; smlouva o poskytov&#225;n&#237; smlužeb port&#225;lu FirstBuySale<div class='small note'><a href='https://smlouvy.gov.cz/smlouva/35908453?backlink=t05dk'>detail smlouvy</a></div></td>
+<td>2025-12-05</td>
+<td>1 225 000 Kč</td>
+</tr>
+<tr>
+<td>E-ZAK</td>
+<td><span class='pill'>Př&#237;m&#233; poskytov&#225;n&#237; SW</span><div class='small note'>Licence, pron&#225;jem, př&#237;stup nebo samotn&#233; poskytnut&#237; elektronick&#233;ho n&#225;stroje bez širš&#237; poradensk&#233; složky.</div></td>
+<td>Jihomoravsk&#253; kraj</td>
+<td>SLU - Smlouva o provozov&#225;n&#237; web. aplikace pro uveřejňov&#225;n&#237; informac&#237; o zad&#225;v&#225;n&#237; veř. zak&#225;zek - EZAK - dodatek č.4<div class='small note'><a href='https://smlouvy.gov.cz/smlouva/3091234?backlink=zcex6'>detail smlouvy</a></div></td>
+<td>2017-09-07</td>
+<td>1 122 000 Kč</td>
+</tr>
+<tr>
+<td>Tender arena</td>
+<td><span class='pill'>Př&#237;m&#233; poskytov&#225;n&#237; SW</span><div class='small note'>Licence, pron&#225;jem, př&#237;stup nebo samotn&#233; poskytnut&#237; elektronick&#233;ho n&#225;stroje bez širš&#237; poradensk&#233; složky.</div></td>
+<td>ČESK&#193; TELEVIZE</td>
+<td>Smlouva o poskytov&#225;n&#237; služeb provozov&#225;n&#237; elektronick&#233;ho n&#225;stroje pro zad&#225;v&#225;n&#237; veřejn&#253;ch zak&#225;zek<div class='small note'><a href='https://smlouvy.gov.cz/smlouva/19940787?backlink=gtlkh'>detail smlouvy</a></div></td>
+<td>2022-04-07</td>
+<td>1 090 000 Kč</td>
+</tr>
+<tr>
+<td>Tender arena</td>
+<td><span class='pill'>Př&#237;m&#233; poskytov&#225;n&#237; SW</span><div class='small note'>Licence, pron&#225;jem, př&#237;stup nebo samotn&#233; poskytnut&#237; elektronick&#233;ho n&#225;stroje bez širš&#237; poradensk&#233; složky.</div></td>
+<td>Statut&#225;rn&#237; město Ostrava</td>
+<td>Dodatek č. 1 ke smlouvě o poskytov&#225;n&#237; služeb provozov&#225;n&#237; elektronick&#233;ho n&#225;stroje pro zad&#225;v&#225;n&#237; veřejn&#253;ch zak&#225;zek Tender arena pro vybran&#233; městsk&#233; obvody Statut&#225;rn&#237;ho města Ostrava<div class='small note'><a href='https://smlouvy.gov.cz/smlouva/34080337?backlink=1us5v'>detail smlouvy</a></div></td>
+<td>2025-07-14</td>
+<td>1 080 000 Kč</td>
+</tr>
+<tr>
+<td>JOSEPHINE</td>
+<td><span class='pill'>Př&#237;m&#233; poskytov&#225;n&#237; SW</span><div class='small note'>Licence, pron&#225;jem, př&#237;stup nebo samotn&#233; poskytnut&#237; elektronick&#233;ho n&#225;stroje bez širš&#237; poradensk&#233; složky.</div></td>
+<td>Albertinum, odborn&#253; l&#233;čebn&#253; &#250;stav, Žamberk</td>
+<td>Smlouva o poskytnut&#237; syst&#233;mů PROEBIZ JOSEPHINE a PROEBIZ TENDERBOX<div class='small note'><a href='https://smlouvy.gov.cz/smlouva/21527883?backlink=4b6u4'>detail smlouvy</a></div></td>
+<td>2022-09-01</td>
+<td>1 050 000 Kč</td>
+</tr>
+<tr>
+<td>Tender arena</td>
+<td><span class='pill'>Př&#237;m&#233; poskytov&#225;n&#237; SW</span><div class='small note'>Licence, pron&#225;jem, př&#237;stup nebo samotn&#233; poskytnut&#237; elektronick&#233;ho n&#225;stroje bez širš&#237; poradensk&#233; složky.</div></td>
+<td>Hlavn&#237; město Praha</td>
+<td>inomin&#225;tn&#237; smlouva, nen&#237;-li v tomto seznamu zvl&#225;štn&#237; k&#243;d &#167; 1746 odst. 2 NOZ: Smlouva o poskytov&#225;n&#237; služeb provozov&#225;n&#237; elektronick&#233;ho n&#225;stroje pro zad&#225;v&#225;n&#237; veřejn&#253;ch zak&#225;zek Tender arena&#174; pro př&#237;spěvkov&#233; organizace zřizovan&#233; hlavn&#237;m městem Prahou<div class='small note'><a href='https://smlouvy.gov.cz/smlouva/22019437?backlink=2yqom'>detail smlouvy</a></div></td>
+<td>2022-10-17</td>
+<td>1 017 600 Kč</td>
+</tr>
+<tr>
+<td>Tender arena</td>
+<td><span class='pill'>Př&#237;m&#233; poskytov&#225;n&#237; SW</span><div class='small note'>Licence, pron&#225;jem, př&#237;stup nebo samotn&#233; poskytnut&#237; elektronick&#233;ho n&#225;stroje bez širš&#237; poradensk&#233; složky.</div></td>
+<td>VYSOK&#201; UČEN&#205; TECHNICK&#201; V BRNĚ</td>
+<td>Zpř&#237;stupněn&#237; a zprovozněn&#237; integračn&#237; vazby mezi elektronick&#253;m n&#225;strojem Tender arena&#174; a syst&#233;mem spisov&#233; služby E-SPIS - dodatek č. 1<div class='small note'><a href='https://smlouvy.gov.cz/smlouva/24736835?backlink=af080'>detail smlouvy</a></div></td>
+<td>2023-06-09</td>
+<td>987 122 Kč</td>
+</tr>
+<tr>
+<td>Tender arena</td>
+<td><span class='pill'>Př&#237;m&#233; poskytov&#225;n&#237; SW</span><div class='small note'>Licence, pron&#225;jem, př&#237;stup nebo samotn&#233; poskytnut&#237; elektronick&#233;ho n&#225;stroje bez širš&#237; poradensk&#233; složky.</div></td>
+<td>VYSOK&#201; UČEN&#205; TECHNICK&#201; V BRNĚ</td>
+<td>Zpř&#237;stupněn&#237; a zprovozněn&#237; integračn&#237; vazby mezi elektronick&#253;m n&#225;strojem Tender arena&#174; a syst&#233;mem spisov&#233; služby E-SPIS<div class='small note'><a href='https://smlouvy.gov.cz/smlouva/18107711?backlink=8b4aa'>detail smlouvy</a></div></td>
+<td>2021-10-20</td>
+<td>893 600 Kč</td>
+</tr>
+<tr>
+<td>Tender arena</td>
+<td><span class='pill'>Př&#237;m&#233; poskytov&#225;n&#237; SW</span><div class='small note'>Licence, pron&#225;jem, př&#237;stup nebo samotn&#233; poskytnut&#237; elektronick&#233;ho n&#225;stroje bez širš&#237; poradensk&#233; složky.</div></td>
+<td>Jihočesk&#253; kraj</td>
+<td>Dodatek č. 2 ke smlouvě o instalaci produktu DataGORDION včetně poskytnut&#237; licenčn&#237;ch pr&#225;v<div class='small note'><a href='https://smlouvy.gov.cz/smlouva/6297063?backlink=mja3f'>detail smlouvy</a></div></td>
+<td>2018-07-31</td>
+<td>864 000 Kč</td>
+</tr>
+<tr>
+<td>E-ZAK</td>
+<td><span class='pill'>Př&#237;m&#233; poskytov&#225;n&#237; SW</span><div class='small note'>Licence, pron&#225;jem, př&#237;stup nebo samotn&#233; poskytnut&#237; elektronick&#233;ho n&#225;stroje bez širš&#237; poradensk&#233; složky.</div></td>
+<td>Jihomoravsk&#253; kraj</td>
+<td>SLU-Smlouva o provozov&#225;n&#237; webov&#233; aplikace pro uveřejňov&#225;n&#237; informac&#237; o zad&#225;v&#225;n&#237; veřejn&#253;ch zak&#225;zek - EZAK<div class='small note'><a href='https://smlouvy.gov.cz/smlouva/9808763?backlink=yeifx'>detail smlouvy</a></div></td>
+<td>2019-08-06</td>
+<td>800 000 Kč</td>
+</tr>
+</tbody></table></div></section>
+
+
+    <section class='card'><h2>Seznam 2 - konzultace, administrace VZ a další poradenské činnosti</h2><div class='table-wrap'><table class='fixed compact-table contracts-table'><thead><tr><th>Systém</th><th>Typ plnění</th><th>Zadavatel</th><th>Popis smlouvy</th><th>Datum</th><th>Hodnota bez DPH</th></tr></thead><tbody>
+<tr>
+<td>ZADAVATEL.CZ</td>
+<td><span class='pill'>Konzultace / administrace / pr&#225;vn&#237; podpora</span><div class='small note'>Poradensk&#233;, zadavatelsk&#233;, pr&#225;vn&#237; nebo administrativn&#237; plněn&#237;; nevykl&#225;dat jako př&#237;m&#233; SW revenue.</div></td>
+<td>Fyzik&#225;ln&#237; &#250;stav AV ČR, v. v. i.</td>
+<td>R&#225;mcov&#225; smlouva o zajištěn&#237; administrace zad&#225;vac&#237;ch ř&#237;zen&#237; a dalš&#237;ch zadavatelsk&#253;ch činnost&#237;<div class='small note'><a href='https://smlouvy.gov.cz/smlouva/113989?backlink=wr4h3'>detail smlouvy</a></div></td>
+<td>2016-08-18</td>
+<td>9 649 000 Kč</td>
+</tr>
+<tr>
+<td>ZADAVATEL.CZ</td>
+<td><span class='pill'>Konzultace / administrace / pr&#225;vn&#237; podpora</span><div class='small note'>Poradensk&#233;, zadavatelsk&#233;, pr&#225;vn&#237; nebo administrativn&#237; plněn&#237;; nevykl&#225;dat jako př&#237;m&#233; SW revenue.</div></td>
+<td>Fyzik&#225;ln&#237; &#250;stav AV ČR, v. v. i.</td>
+<td>R&#225;mcov&#225; dohoda o Zajištěn&#237; administrace zad&#225;vac&#237;ch ř&#237;zen&#237; a dalš&#237;ch zadavatelsk&#253;ch činnost&#237;<div class='small note'><a href='https://smlouvy.gov.cz/smlouva/5264788?backlink=6a4wc'>detail smlouvy</a></div></td>
+<td>2018-04-16</td>
+<td>5 500 000 Kč</td>
+</tr>
+<tr>
+<td>ZADAVATEL.CZ</td>
+<td><span class='pill'>Konzultace / administrace / pr&#225;vn&#237; podpora</span><div class='small note'>Poradensk&#233;, zadavatelsk&#233;, pr&#225;vn&#237; nebo administrativn&#237; plněn&#237;; nevykl&#225;dat jako př&#237;m&#233; SW revenue.</div></td>
+<td>Fyzik&#225;ln&#237; &#250;stav AV ČR, v. v. i.</td>
+<td>R&#225;mcov&#225; dohoda - Zajištěn&#237; administrace zad&#225;vac&#237;ch ř&#237;zen&#237; a dalš&#237;ch zadavatelsk&#253;ch činnost&#237; pro potřeby Fyzik&#225;ln&#237;ho &#250;stavu AV ČR<div class='small note'><a href='https://smlouvy.gov.cz/smlouva/14521672?backlink=gwm9h'>detail smlouvy</a></div></td>
+<td>2020-11-19</td>
+<td>5 100 000 Kč</td>
+</tr>
+<tr>
+<td>ZADAVATEL.CZ</td>
+<td><span class='pill'>Konzultace / administrace / pr&#225;vn&#237; podpora</span><div class='small note'>Poradensk&#233;, zadavatelsk&#233;, pr&#225;vn&#237; nebo administrativn&#237; plněn&#237;; nevykl&#225;dat jako př&#237;m&#233; SW revenue.</div></td>
+<td>Fyzik&#225;ln&#237; &#250;stav AV ČR, v. v. i.</td>
+<td>Dodatek č. 1 R&#225;mcov&#233; dohody Zajištěn&#237; administrace zad&#225;vac&#237;ch ř&#237;zen&#237; a dalš&#237;ch zadavatelsk&#253;ch činnost&#237;<div class='small note'><a href='https://smlouvy.gov.cz/smlouva/19691659?backlink=5s809'>detail smlouvy</a></div></td>
+<td>2022-03-16</td>
+<td>5 100 000 Kč</td>
+</tr>
+<tr>
+<td>ZADAVATEL.CZ</td>
+<td><span class='pill'>Konzultace / administrace / pr&#225;vn&#237; podpora</span><div class='small note'>Poradensk&#233;, zadavatelsk&#233;, pr&#225;vn&#237; nebo administrativn&#237; plněn&#237;; nevykl&#225;dat jako př&#237;m&#233; SW revenue.</div></td>
+<td>N&#225;rodn&#237; pam&#225;tkov&#253; &#250;stav</td>
+<td>R&#225;mcov&#225; dohoda na zajištěn&#237; v&#253;konu zadavatelsk&#253;ch činnost&#237;<div class='small note'><a href='https://smlouvy.gov.cz/smlouva/22601573?backlink=f3uen'>detail smlouvy</a></div></td>
+<td>2022-12-05</td>
+<td>1 992 000 Kč</td>
+</tr>
+<tr>
+<td>ZADAVATEL.CZ</td>
+<td><span class='pill'>Konzultace / administrace / pr&#225;vn&#237; podpora</span><div class='small note'>Poradensk&#233;, zadavatelsk&#233;, pr&#225;vn&#237; nebo administrativn&#237; plněn&#237;; nevykl&#225;dat jako př&#237;m&#233; SW revenue.</div></td>
+<td>Nemocnice Pardubick&#233;ho kraje, a.s.</td>
+<td>zadavatelsk&#233; činnosti<div class='small note'><a href='https://smlouvy.gov.cz/smlouva/9692355?backlink=iezh6'>detail smlouvy</a></div></td>
+<td>2019-07-23</td>
+<td>1 900 000 Kč</td>
+</tr>
+<tr>
+<td>ZADAVATEL.CZ</td>
+<td><span class='pill'>Konzultace / administrace / pr&#225;vn&#237; podpora</span><div class='small note'>Poradensk&#233;, zadavatelsk&#233;, pr&#225;vn&#237; nebo administrativn&#237; plněn&#237;; nevykl&#225;dat jako př&#237;m&#233; SW revenue.</div></td>
+<td>Hlavn&#237; město Praha</td>
+<td>zabezpečen&#237; komplexn&#237; př&#237;pravy a průběhu tř&#237; (3) zad&#225;vac&#237;ch ř&#237;zen&#237; na nadlimitn&#237; veřejn&#233; zak&#225;zky na služby<div class='small note'><a href='https://smlouvy.gov.cz/smlouva/1998218?backlink=jnogp'>detail smlouvy</a></div></td>
+<td>2017-05-22</td>
+<td>1 800 000 Kč</td>
+</tr>
+<tr>
+<td>Tender arena</td>
+<td><span class='pill'>Konzultace / administrace / pr&#225;vn&#237; podpora</span><div class='small note'>Poradensk&#233;, zadavatelsk&#233;, pr&#225;vn&#237; nebo administrativn&#237; plněn&#237;; nevykl&#225;dat jako př&#237;m&#233; SW revenue.</div></td>
+<td>Dopravn&#237; podnik hl. m. Prahy, akciov&#225; společnost</td>
+<td>SW syst&#233;m kvalifikace Tender arena eGordion elektronicky<div class='small note'><a href='https://smlouvy.gov.cz/smlouva/31152724?backlink=glfyz'>detail smlouvy</a></div></td>
+<td>2024-11-26</td>
+<td>1 500 000 Kč</td>
+</tr>
+<tr>
+<td>Tender arena</td>
+<td><span class='pill'>Konzultace / administrace / pr&#225;vn&#237; podpora</span><div class='small note'>Poradensk&#233;, zadavatelsk&#233;, pr&#225;vn&#237; nebo administrativn&#237; plněn&#237;; nevykl&#225;dat jako př&#237;m&#233; SW revenue.</div></td>
+<td>Dopravn&#237; podnik hl. m. Prahy, akciov&#225; společnost</td>
+<td>Služby-Tender Arena<div class='small note'><a href='https://smlouvy.gov.cz/smlouva/35801445?backlink=0jroa'>detail smlouvy</a></div></td>
+<td>2025-11-28</td>
+<td>1 500 000 Kč</td>
+</tr>
+<tr>
+<td>ZADAVATEL.CZ</td>
+<td><span class='pill'>Konzultace / administrace / pr&#225;vn&#237; podpora</span><div class='small note'>Poradensk&#233;, zadavatelsk&#233;, pr&#225;vn&#237; nebo administrativn&#237; plněn&#237;; nevykl&#225;dat jako př&#237;m&#233; SW revenue.</div></td>
+<td>Fyzik&#225;ln&#237; &#250;stav AV ČR, v. v. i.</td>
+<td>Zajištěn&#237; administrace zad&#225;vac&#237;ch ř&#237;zen&#237; a dalš&#237;ch zadavatelsk&#253;ch činnost&#237; pro potřeby FZU AV - Minitendr č. 1<div class='small note'><a href='https://smlouvy.gov.cz/smlouva/410989?backlink=wr4h3'>detail smlouvy</a></div></td>
+<td>2016-10-18</td>
+<td>1 351 925 Kč</td>
+</tr>
+<tr>
+<td>ZADAVATEL.CZ</td>
+<td><span class='pill'>Konzultace / administrace / pr&#225;vn&#237; podpora</span><div class='small note'>Poradensk&#233;, zadavatelsk&#233;, pr&#225;vn&#237; nebo administrativn&#237; plněn&#237;; nevykl&#225;dat jako př&#237;m&#233; SW revenue.</div></td>
+<td>Fyzik&#225;ln&#237; &#250;stav AV ČR, v. v. i.</td>
+<td>Zajištěn&#237; administrace zad&#225;vac&#237;ch ř&#237;zen&#237; a dalš&#237;ch zadavatelsk&#253;ch činnost&#237; pro potřeby FZ&#218; AV ČR, v. v. i. v souvislosti s vybudov&#225;n&#237;m a provozem las. center ELI a HiLASE - Minitendr č. 2<div class='small note'><a href='https://smlouvy.gov.cz/smlouva/15515415?backlink=gwm9h'>detail smlouvy</a></div></td>
+<td>2021-02-16</td>
+<td>1 313 500 Kč</td>
+</tr>
+<tr>
+<td>Tender arena</td>
+<td><span class='pill'>Konzultace / administrace / pr&#225;vn&#237; podpora</span><div class='small note'>Poradensk&#233;, zadavatelsk&#233;, pr&#225;vn&#237; nebo administrativn&#237; plněn&#237;; nevykl&#225;dat jako př&#237;m&#233; SW revenue.</div></td>
+<td>Dopravn&#237; podnik hl. m. Prahy, akciov&#225; společnost</td>
+<td>VZ Tender arena<div class='small note'><a href='https://smlouvy.gov.cz/smlouva/24042509?backlink=05ih4'>detail smlouvy</a></div></td>
+<td>2023-04-11</td>
+<td>1 000 000 Kč</td>
+</tr>
+<tr>
+<td>ZADAVATEL.CZ</td>
+<td><span class='pill'>Konzultace / administrace / pr&#225;vn&#237; podpora</span><div class='small note'>Poradensk&#233;, zadavatelsk&#233;, pr&#225;vn&#237; nebo administrativn&#237; plněn&#237;; nevykl&#225;dat jako př&#237;m&#233; SW revenue.</div></td>
+<td>Česk&#225; agentura na podporu obchodu/CzechTrade</td>
+<td>Př&#237;kazn&#237; smlouva<div class='small note'><a href='https://smlouvy.gov.cz/smlouva/7340195?backlink=5rmri'>detail smlouvy</a></div></td>
+<td>2018-11-16</td>
+<td>927 000 Kč</td>
+</tr>
+<tr>
+<td>ZADAVATEL.CZ</td>
+<td><span class='pill'>Konzultace / administrace / pr&#225;vn&#237; podpora</span><div class='small note'>Poradensk&#233;, zadavatelsk&#233;, pr&#225;vn&#237; nebo administrativn&#237; plněn&#237;; nevykl&#225;dat jako př&#237;m&#233; SW revenue.</div></td>
+<td>Fyzik&#225;ln&#237; &#250;stav AV ČR, v. v. i.</td>
+<td>Zajištěn&#237; administrace zad&#225;vac&#237;ch ř&#237;zen&#237; a dalš&#237;ch zadavatelsk&#253;ch činnost&#237; pro potřeby FZU AV ČR, v souvislosti s projekty ELI a HiLASE-Minitendr č. 4<div class='small note'><a href='https://smlouvy.gov.cz/smlouva/2646470?backlink=h8glb'>detail smlouvy</a></div></td>
+<td>2017-07-21</td>
+<td>893 050 Kč</td>
+</tr>
+<tr>
+<td>ZADAVATEL.CZ</td>
+<td><span class='pill'>Konzultace / administrace / pr&#225;vn&#237; podpora</span><div class='small note'>Poradensk&#233;, zadavatelsk&#233;, pr&#225;vn&#237; nebo administrativn&#237; plněn&#237;; nevykl&#225;dat jako př&#237;m&#233; SW revenue.</div></td>
+<td>Fyzik&#225;ln&#237; &#250;stav AV ČR, v. v. i.</td>
+<td>Prov&#225;děc&#237; smlouva o poskytov&#225;n&#237; služeb - Zajištěn&#237; administrace zad&#225;vac&#237;ch ř&#237;zen&#237; a dalš&#237;ch zadavatelsk&#253;ch činnost&#237; v souvislosti s vybudov&#225;n&#237; a provozem laserov&#253;ch center ELI a HiLASE - Minitendr 2<div class='small note'><a href='https://smlouvy.gov.cz/smlouva/7346063?backlink=5rmri'>detail smlouvy</a></div></td>
+<td>2018-11-16</td>
+<td>866 000 Kč</td>
+</tr>
+<tr>
+<td>E-ZAK</td>
+<td><span class='pill'>Konzultace / administrace / pr&#225;vn&#237; podpora</span><div class='small note'>Poradensk&#233;, zadavatelsk&#233;, pr&#225;vn&#237; nebo administrativn&#237; plněn&#237;; nevykl&#225;dat jako př&#237;m&#233; SW revenue.</div></td>
+<td>Městsk&#233; divadlo Brno, př&#237;spěvkov&#225; organizace</td>
+<td>R&#225;mcov&#225; př&#237;kazn&#237; smlouva - administrace veřejn&#253;ch zak&#225;zek<div class='small note'><a href='https://smlouvy.gov.cz/smlouva/7414931?backlink=44y3n'>detail smlouvy</a></div></td>
+<td>2018-11-23</td>
+<td>640 000 Kč</td>
+</tr>
+<tr>
+<td>Tender arena</td>
+<td><span class='pill'>Konzultace / administrace / pr&#225;vn&#237; podpora</span><div class='small note'>Poradensk&#233;, zadavatelsk&#233;, pr&#225;vn&#237; nebo administrativn&#237; plněn&#237;; nevykl&#225;dat jako př&#237;m&#233; SW revenue.</div></td>
+<td>St&#225;tn&#237; fond dopravn&#237; infrastruktury</td>
+<td>D1 Smlouva o integraci Tender areny na novou ESSL<div class='small note'><a href='https://smlouvy.gov.cz/smlouva/34445813?backlink=0jroa'>detail smlouvy</a></div></td>
+<td>2025-08-14</td>
+<td>613 636 Kč</td>
+</tr>
+<tr>
+<td>ZADAVATEL.CZ</td>
+<td><span class='pill'>Konzultace / administrace / pr&#225;vn&#237; podpora</span><div class='small note'>Poradensk&#233;, zadavatelsk&#233;, pr&#225;vn&#237; nebo administrativn&#237; plněn&#237;; nevykl&#225;dat jako př&#237;m&#233; SW revenue.</div></td>
+<td>Fyzik&#225;ln&#237; &#250;stav AV ČR, v. v. i.</td>
+<td>Zajištěn&#237; administrace zad&#225;vac&#237;ch ř&#237;zen&#237; a dalš&#237;ch zadavatelsk&#253;ch činnost&#237; pro potřeby FZ&#218; AV ČR, v.v.i. - Minitendr č. 2<div class='small note'><a href='https://smlouvy.gov.cz/smlouva/1004829?backlink=5nu8w'>detail smlouvy</a></div></td>
+<td>2017-01-11</td>
+<td>589 200 Kč</td>
+</tr>
+<tr>
+<td>ZADAVATEL.CZ</td>
+<td><span class='pill'>Konzultace / administrace / pr&#225;vn&#237; podpora</span><div class='small note'>Poradensk&#233;, zadavatelsk&#233;, pr&#225;vn&#237; nebo administrativn&#237; plněn&#237;; nevykl&#225;dat jako př&#237;m&#233; SW revenue.</div></td>
+<td>Česk&#225; agentura na podporu obchodu</td>
+<td>Př&#237;kazn&#237; smlouva<div class='small note'><a href='https://smlouvy.gov.cz/smlouva/18805395?backlink=5s809'>detail smlouvy</a></div></td>
+<td>2021-12-20</td>
+<td>500 000 Kč</td>
+</tr>
+<tr>
+<td>ZADAVATEL.CZ</td>
+<td><span class='pill'>Konzultace / administrace / pr&#225;vn&#237; podpora</span><div class='small note'>Poradensk&#233;, zadavatelsk&#233;, pr&#225;vn&#237; nebo administrativn&#237; plněn&#237;; nevykl&#225;dat jako př&#237;m&#233; SW revenue.</div></td>
+<td>Institut pl&#225;nov&#225;n&#237; a rozvoje hlavn&#237;ho města Prahy</td>
+<td>r&#225;mcov&#225; dohoda - Poskytov&#225;n&#237; služeb extern&#237; administrace veřejn&#253;ch zak&#225;zek v roce 2021<div class='small note'><a href='https://smlouvy.gov.cz/smlouva/15933795?backlink=jwpl5'>detail smlouvy</a></div></td>
+<td>2021-03-22</td>
+<td>500 000 Kč</td>
+</tr>
+</tbody></table></div></section>
+
+
+    <section class="card">
+      <h2>Hlavní závěry</h2>
+      <ul>
+        <li>JOSEPHINE má v registru smluv 40 dohledaných smluv a 24 unikátních zadavatelů. Z hlediska počtu smluv zůstává pod nejsilnější trojicí E-ZAK, ZADAVATEL.CZ a Tender arena.</li>
+        <li>U JOSEPHINE převažují kontrakty typu <strong>SW + rozšířené služby</strong> (25) a <strong>přímé poskytování SW</strong> (15). To je obchodně podstatnější než prosté čtení součtu všech částek.</li>
+        <li>ZADAVATEL.CZ má v této metodice výrazně nejsilnější stopu v kategorii <strong>konzultace / administrace / právní podpora</strong>, zatímco E-ZAK a Tender arena mají výraznější mix mezi přímým SW a rozšířenými službami.</li>
+        <li>V TOP 20 zveřejněných hodnotách napříč trhem je 5 smluv klasifikovaných jako <strong>konzultace / administrace / právní podpora</strong>. Tyto položky není vhodné prezentovat jako čisté softwarové revenue.</li>
+        <li>Příklad Fyzikálního ústavu AV ČR potvrzuje obchodní připomínku: vysoké částky u ZADAVATEL.CZ odpovídají rámcovým dohodám a minitendrům na administraci zadávacích řízení, nikoli pouze licenci elektronického nástroje.</li>
+        <li>Registr smluv zůstává silným zdrojem pro srovnání veřejné obchodní stopy a klientské báze, ale kvůli zaslepeným nebo nesrovnatelně zveřejněným cenám je slabší pro přesný odhad dosahovaných tržeb dodavatelů.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Výstupní soubory</h2>
+      <ul>
+        <li><code>contracts_raw.csv</code> - surová data včetně klasifikace typu kontraktu</li>
+        <li><code>summary.csv</code> - souhrn po systémech a typech plnění</li>
+        <li><code>report.html</code> - report s grafy a interpretací</li>
+      </ul>
+    </section>
+  </div>
+</body>
+</html>
