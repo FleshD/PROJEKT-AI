@@ -12,6 +12,16 @@ python3 -m http.server 8000
 
 Potom otevři <http://127.0.0.1:8000/snake-game/>.
 
+## Ověření Playwrightem
+
+Nainstaluj závislosti v adresáři `snake-game` a spusť smoke test, který nastartuje lokální server, otevře hru a uloží screenshot do `snake-game/screenshot.png`:
+
+```bash
+cd snake-game
+npm install
+npm run verify
+```
+
 ## Ovládání
 
 - Šipky nebo klávesy `W`, `A`, `S`, `D` mění směr hada.
