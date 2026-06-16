@@ -150,16 +150,31 @@ function drawTile(tile, fill, stroke) {
   context.fillStyle = fill;
   context.strokeStyle = stroke;
   context.lineWidth = 2;
+  const x = tile.x * tileSize + padding;
+  const y = tile.y * tileSize + padding;
+  const size = tileSize - padding * 2;
+
   context.beginPath();
-  context.roundRect(
-    tile.x * tileSize + padding,
-    tile.y * tileSize + padding,
-    tileSize - padding * 2,
-    tileSize - padding * 2,
-    6,
-  );
+  drawRoundedRect(context, x, y, size, size, 6);
   context.fill();
   context.stroke();
+}
+
+function drawRoundedRect(drawingContext, x, y, width, height, radius) {
+  if (typeof drawingContext.roundRect === 'function') {
+    drawingContext.roundRect(x, y, width, height, radius);
+    return;
+  }
+
+  drawingContext.moveTo(x + radius, y);
+  drawingContext.lineTo(x + width - radius, y);
+  drawingContext.quadraticCurveTo(x + width, y, x + width, y + radius);
+  drawingContext.lineTo(x + width, y + height - radius);
+  drawingContext.quadraticCurveTo(x + width, y + height, x + width - radius, y + height);
+  drawingContext.lineTo(x + radius, y + height);
+  drawingContext.quadraticCurveTo(x, y + height, x, y + height - radius);
+  drawingContext.lineTo(x, y + radius);
+  drawingContext.quadraticCurveTo(x, y, x + radius, y);
 }
 
 function handleKeyDown(event) {
