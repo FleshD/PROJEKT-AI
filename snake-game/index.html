@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Had ve stylu Springfieldu</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="game-shell">
+    <section class="hero">
+      <p class="eyebrow">Žlutý arkádový had</p>
+      <h1>Had</h1>
+      <p>Sbírej růžové donuty, prodlužuj žlutého hada a vyhni se zdi i vlastnímu ocasu.</p>
+    </section>
+
+    <section class="scoreboard" aria-label="Skóre hry">
+      <div>
+        <span>Skóre</span>
+        <strong id="score">0</strong>
+      </div>
+      <div>
+        <span>Nejlepší</span>
+        <strong id="bestScore">0</strong>
+      </div>
+      <button id="startButton" type="button">Start / restart</button>
+    </section>
+
+    <canvas id="game" width="480" height="480" aria-label="Herní plocha hada"></canvas>
+
+    <section class="help">
+      <h2>Ovládání</h2>
+      <p>Použij šipky nebo klávesy <kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd>. Na telefonu můžeš použít tlačítka níže.</p>
+      <div class="touch-controls" aria-label="Dotykové ovládání">
+        <button data-direction="up" aria-label="Nahoru">↑</button>
+        <button data-direction="left" aria-label="Doleva">←</button>
+        <button data-direction="down" aria-label="Dolů">↓</button>
+        <button data-direction="right" aria-label="Doprava">→</button>
+      </div>
+      <p id="message" class="message">Klikni na Start a začni hrát.</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
