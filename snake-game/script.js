@@ -42,7 +42,7 @@ touchButtons.forEach((button) => {
 function startGame() {
   resetGame();
   isRunning = true;
-  messageElement.textContent = 'Hra běží! Sbírej červená jablka.';
+  messageElement.textContent = 'Hra běží! Sbírej springfieldské donuty.';
   clearInterval(gameLoop);
   gameLoop = setInterval(updateGame, 115);
 }
@@ -115,13 +115,13 @@ function placeApple() {
 }
 
 function draw() {
-  context.fillStyle = '#07130d';
+  context.fillStyle = '#ffe982';
   context.fillRect(0, 0, canvas.width, canvas.height);
   drawGrid();
-  drawTile(apple, '#ef4444', '#fecaca');
+  drawDonut(apple);
 
   snake.forEach((part, index) => {
-    drawTile(part, index === 0 ? '#86efac' : '#22c55e', index === 0 ? '#dcfce7' : '#bbf7d0');
+    drawTile(part, index === 0 ? '#ffd90f' : '#f7c600', index === 0 ? '#172033' : '#b88700');
   });
 
   if (!isRunning) {
@@ -131,7 +131,7 @@ function draw() {
 }
 
 function drawGrid() {
-  context.strokeStyle = 'rgba(255, 255, 255, 0.04)';
+  context.strokeStyle = 'rgba(23, 32, 51, 0.08)';
   context.lineWidth = 1;
 
   for (let line = 0; line <= tileCount; line += 1) {
@@ -158,6 +158,37 @@ function drawTile(tile, fill, stroke) {
   drawRoundedRect(context, x, y, size, size, 6);
   context.fill();
   context.stroke();
+}
+
+function drawDonut(tile) {
+  const centerX = tile.x * tileSize + tileSize / 2;
+  const centerY = tile.y * tileSize + tileSize / 2;
+  const outerRadius = tileSize * 0.42;
+  const innerRadius = tileSize * 0.16;
+
+  context.fillStyle = '#c47a2c';
+  context.beginPath();
+  context.arc(centerX, centerY, outerRadius, 0, Math.PI * 2);
+  context.fill();
+
+  context.fillStyle = '#ff79b0';
+  context.beginPath();
+  context.arc(centerX, centerY, outerRadius * 0.78, 0, Math.PI * 2);
+  context.fill();
+
+  context.fillStyle = '#ffe982';
+  context.beginPath();
+  context.arc(centerX, centerY, innerRadius, 0, Math.PI * 2);
+  context.fill();
+
+  drawSprinkle(centerX - 5, centerY - 3, '#00a6ff');
+  drawSprinkle(centerX + 4, centerY + 3, '#ffffff');
+  drawSprinkle(centerX + 3, centerY - 6, '#ef3340');
+}
+
+function drawSprinkle(x, y, color) {
+  context.fillStyle = color;
+  context.fillRect(x, y, 5, 2);
 }
 
 function drawRoundedRect(drawingContext, x, y, width, height, radius) {

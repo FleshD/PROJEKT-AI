@@ -1,6 +1,6 @@
 # Had v prohlížeči
 
-Jednoduchá hra Had napsaná pouze v HTML, CSS a JavaScriptu.
+Jednoduchá hra Had napsaná pouze v HTML, CSS a JavaScriptu, převlečená do žluté springfieldské grafiky s růžovými donuty.
 
 ## Spuštění
 
